@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view contentType="text/html">
+	<h:head>
+	</h:head>
+	<h:body>
+
+		<h:form id="frmCad">
+
+			<p:growl id="growl" life="3000" />
+
+			<h:inputHidden value="#{escolaMB.escola.id}" id="id" />
+			<p:panel id="toggleable" header="Cadastro de Escola"
+				toggleable="true" closable="true" toggleSpeed="500" closeSpeed="500"
+				widgetVar="panel">
+				<p:messages autoUpdate="true" />
+
+
+				<h:panelGrid columns="3" id="Escola" style="align: center">
+
+					<p:outputLabel for="nome" value="Nome da Escola:" />
+					<p:autoComplete id="nome" queryDelay="2000"
+						value="#{escolaMB.escola.nome}"
+						completeMethod="#{escolaMB.complete}" size="50" required="true"
+						effect="blind" cache="true" cacheTimeout="30000" dropdown="true">
+						<p:ajax event="itemSelect" listener="#{escolaMB.onItemSelect}"
+							update="frmCad" />
+					</p:autoComplete>
+
+					<p:message for="nome" />
+
+
+					<p:outputLabel for="endereco" value="Lougraouro:" />
+					<p:inputText id="endereco" value="#{escolaMB.escola.endereco}"
+						required="true" size="50" disabled="false" />
+					<p:message for="endereco" />
+
+					<p:outputLabel for="cidade" value="Cidade:"></p:outputLabel>
+					<p:inputText id="cidade" value="#{escolaMB.escola.cidade}"
+						required="true" size="50" disabled="false" />
+					<p:message for="cidade" />
+
+					<p:outputLabel for="bairro" value="Bairro:" />
+					<p:inputText id="bairro" value="#{escolaMB.escola.bairro}"
+						required="true" size="50" disabled="false" />
+					<p:message for="bairro" />
+
+					<p:outputLabel for="estado" value="Estado:" />
+					<p:selectOneMenu id="estado" value="#{escolaMB.escola.estado}"
+						required="true" style="width:155px">
+						<f:selectItem itemLabel="Selecione Estado" itemValue="" />
+						<f:selectItem itemLabel="São Paulo" itemValue="SP" />
+						<f:selectItem itemLabel="Rio de Janeiro" itemValue="RJ" />
+						<f:selectItem itemLabel="Bahia" itemValue="BA" />
+					</p:selectOneMenu>
+					<p:message for="estado" />
+
+				</h:panelGrid>
+
+				<p:commandButton value="Salvar" id="ajax" validateClient="true"
+					actionListener="#{escolaMB.salvarEscola}" icon="ui-icon-check"
+					styleClass="ui-priority-primary" update="frmCad" />
+
+
+				<p:commandButton value="Excluir" id="idExcluir" type="button"
+					rendered="#{escolaMB.escola.id != 0}"
+					onclick="PF('excluirDialog').show()" icon="ui-icon-close"
+					update="frmCad" />
+
+				<p:commandButton value="Limpar Cadastro" id="ajax2"
+					actionListener="#{escolaMB.limparFormulario}"
+					styleClass="ui-priority-primary" update="frmCad" />
+
+			</p:panel>
+		</h:form>
+		<h:form id="frmConsulta">
+			<p:dataTable var="escola" id="gridEscola" rowKey="#{escola.id}"
+				emptyMessage="Registro não Encontrado" resizableColumns="true"
+				value="#{escolaMB.listEscola}" rows="5" paginator="true"
+				selection="#{escolaMB.selecionadosEscola}"
+				paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+				rowsPerPageTemplate="5,10,15,20">
+				<f:facet name="header">
+           				Cadastro da Escola
+       			</f:facet>
+
+				<p:column selectionMode="multiple"
+					style="width:40px; text-align:center">
+				</p:column>
+
+				<p:column headerText="Código de Escola" sortBy="#{escola.id}">
+					<h:outputText value="#{escola.id}" />
+				</p:column>
+
+				<p:column headerText="Nome" sortBy="#{escola.nome}">
+					<h:outputText value="#{escola.nome}" />
+				</p:column>
+
+				<p:column headerText="Cidade" sortBy="#{escola.cidade}">
+					<h:outputText value="#{escola.cidade}" />
+				</p:column>
+
+				<f:facet name="footer">
+					<p:commandButton value="Excluir"
+						oncomplete="PF('excluirFromGridDialog').show()" ajax="true"
+						update="frmConsulta" validateClient="true" icon="ui-icon-close"
+						actionListener="#{escolaMB.excluirFromGrid}" />
+				</f:facet>
+
+			</p:dataTable>
+
+			<p:dialog header="Excluir" widgetVar="excluirFromGridDialog"
+				width="580" height="500" modal="true" showEffect="exclode"
+				hideEffect="exclode" resizable="false">
+				<p:outputPanel id="carDetail2" style="text-align:center;">
+					<br />
+					<p:dataTable id="displayExclusao" var="selecione"
+						value="#{escolaMB.selecionadosEscola}">
+						<f:facet name="header">  
+                  						  Escola(s) será(am) Excluido(s)! 
+           					 </f:facet>
+
+						<p:column headerText="Código do Escola">
+							<h:outputText value="#{selecione.id}" />
+						</p:column>
+						<p:column headerText="Nome do Escola">
+							<h:outputText value="#{selecione.nome}" />
+						</p:column>
+						<f:facet name="footer">
+							<p:commandButton value="Fechar" id="idExcluirFechar2"
+								onclick="GerarPropostaDialog.hide()" update="frmConsulta" />
+
+							<p:commandButton value="Confirma Exclusão" id="idExcluirEscola2"
+								icon="ui-icon-close"
+								actionListener="#{escolaMB.excluirEscolaList}"
+								update="frmConsulta,frmCad" />
+						</f:facet>
+					</p:dataTable>
+				</p:outputPanel>
+			</p:dialog>
+
+			<p:dialog header="Excluir Escola" widgetVar="excluirDialog"
+				modal="true" showEffect="fade" hideEffect="fade" resizable="true">
+				<p:outputPanel id="carDetail" style="text-align:center;">
+					<p:panelGrid columns="2" columnClasses="label,value">
+
+						<p:commandButton value="Fechar" id="idExcluirFechar"
+							onclick="GerarPropostaDialog.hide()" update="frmConsulta" />
+
+						<p:commandButton value="Confirma Exclusão" id="idExcluirEscola"
+							icon="ui-icon-close" actionListener="#{escolaMB.excluirEscola}"
+							update="frmConsulta" />
+
+
+					</p:panelGrid>
+				</p:outputPanel>
+			</p:dialog>
+
+
+		</h:form>
+
+	</h:body>
+</f:view>
+</html>
+
