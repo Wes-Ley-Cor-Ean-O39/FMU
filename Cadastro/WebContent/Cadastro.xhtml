@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view contentType="text/html">
+	<h:head>
+	</h:head>
+	<h:body>
+
+		<h:form id="frmCad">
+
+			<p:growl id="growl" life="3000" />
+
+			<h:inputHidden value="#{cadastroMB.cadastro.id}" id="id" />
+			<p:panel id="toggleable" header="Cadastro de Veículos"
+				toggleable="true" closable="true" toggleSpeed="500" closeSpeed="500"
+				widgetVar="panel">
+				<p:messages autoUpdate="true" />
+
+
+				<h:panelGrid columns="3" id="Cadastro" style="align: center">
+
+
+					<p:outputLabel for="empresa" value="Corporação:" />
+					<p:selectOneMenu id="empresa"
+						value="#{cadastroMB.cadastro.empresa}" required="true"
+						style="width:220px">
+						<f:selectItem itemLabel="Selecione a Corporação" itemValue="" />
+						<f:selectItem itemLabel="Agrale" itemValue="Agrale" />
+						<f:selectItem itemLabel="Aston Martin" itemValue="Aston Martin" />
+						<f:selectItem itemLabel="Audi" itemValue="Audi" />
+						<f:selectItem itemLabel="Bentley" itemValue="Bentley" />
+						<f:selectItem itemLabel="BMW" itemValue="BMW" />
+						<f:selectItem itemLabel="Changan" itemValue="Changan" />
+						<f:selectItem itemLabel="Chery" itemValue="Chery" />
+						<f:selectItem itemLabel="Chevrolet" itemValue="Chevrolet" />
+						<f:selectItem itemLabel="Chrsler" itemValue="Chrsler" />
+						<f:selectItem itemLabel="Citroen" itemValue="Citroen" />
+						<f:selectItem itemLabel="Dodge" itemValue="Dodge" />
+						<f:selectItem itemLabel="Effa" itemValue="Effa" />
+						<f:selectItem itemLabel="Ferrari" itemValue="Ferrari" />
+						<f:selectItem itemLabel="Fiat" itemValue="Fiat" />
+						<f:selectItem itemLabel="Ford" itemValue="Ford" />
+						<f:selectItem itemLabel="Gelly" itemValue="Geely" />
+						<f:selectItem itemLabel="GM/Chevrolet" itemValue="GM/Chevrolet" />
+						<f:selectItem itemLabel="Hafei" itemValue="Hafei" />
+						<f:selectItem itemLabel="Honda" itemValue="Honda" />
+						<f:selectItem itemLabel="Hyundai" itemValue="Hyundai" />
+						<f:selectItem itemLabel="Iveco" itemValue="Iveco" />
+						<f:selectItem itemLabel="JAC" itemValue="JAC" />
+						<f:selectItem itemLabel="Jaguar" itemValue="Jaguar" />
+						<f:selectItem itemLabel="Jeep" itemValue="Jeep" />
+						<f:selectItem itemLabel="Jinbei" itemValue="Jinbei" />
+						<f:selectItem itemLabel="KIA" itemValue="KIA" />
+						<f:selectItem itemLabel="Lamborguini" itemValue="Lamborguini" />
+						<f:selectItem itemLabel="Land Rover" itemValue="Land Rover" />
+						<f:selectItem itemLabel="Lexus" itemValue="Lexus" />
+						<f:selectItem itemLabel="Lifan" itemValue="Lifan" />
+						<f:selectItem itemLabel="Mahindra" itemValue="Mahindra" />
+						<f:selectItem itemLabel="Maserati" itemValue="Maserati" />
+						<f:selectItem itemLabel="Mercedes-Benz" itemValue="Mercedes-Benz" />
+						<f:selectItem itemLabel="MG Motors" itemValue="MG Motors" />
+						<f:selectItem itemLabel="Mini" itemValue="Mini" />
+						<f:selectItem itemLabel="Mitsubishi" itemValue="" />
+						<f:selectItem itemLabel="Nissan" itemValue="Nissan" />
+						<f:selectItem itemLabel="Peugeot" itemValue="Peugeot" />
+						<f:selectItem itemLabel="Porsche" itemValue="Porsche" />
+						<f:selectItem itemLabel="RAM" itemValue="RAM" />
+						<f:selectItem itemLabel="Renault" itemValue="Renault" />
+						<f:selectItem itemLabel="Smart" itemValue="Smart" />
+						<f:selectItem itemLabel="Ssangyong" itemValue="Ssangyong" />
+						<f:selectItem itemLabel="Subaru" itemValue="Subaru" />
+						<f:selectItem itemLabel="Suzuki" itemValue="Suzuki" />
+						<f:selectItem itemLabel="Tesla" itemValue="Suzuki" />
+						<f:selectItem itemLabel="Toyota" itemValue="Toyota" />
+						<f:selectItem itemLabel="Troller" itemValue="Troller" />
+						<f:selectItem itemLabel="Triumph" itemValue="Triumph" />
+						<f:selectItem itemLabel="VolksWagen" itemValue="VolksWagen" />
+						<f:selectItem itemLabel="Volvo" itemValue="Yamaha" />
+					</p:selectOneMenu>
+					<p:message for="empresa" />
+
+					<p:outputLabel for="veiculo" value="Veiculo:" />
+					<p:selectOneMenu id="veiculo"
+						value="#{cadastroMB.cadastro.veiculo}" required="true"
+						style="width:220px">
+						<f:selectItem itemLabel="Selecione o Tipo de Veículo" itemValue="" />
+						<f:selectItem itemLabel="Automóvel" itemValue="Automóvel" />
+						<f:selectItem itemLabel="Motocicleta" itemValue="Motocicleta" />
+					</p:selectOneMenu>
+					<p:message for="veiculo" />
+
+					<p:outputLabel for="modelo" value="Modelo:"></p:outputLabel>
+					<p:inputText id="modelo" value="#{cadastroMB.cadastro.modelo}"
+						required="true" size="50" disabled="false" />
+					<p:message for="modelo" />
+
+
+					<p:outputLabel for="placa" value="Placa:" />
+					<p:inputMask id="placa" value="#{cadastroMB.cadastro.placa}"
+						size="8" required="true" mask="aaa-9999"
+						validatorMessage="Favor informar a Placa!">
+					</p:inputMask>
+					<p:message for="placa" />
+
+
+					<p:outputLabel for="motorista" value="Motorista:"></p:outputLabel>
+					<p:inputText id="motorista"
+						value="#{cadastroMB.cadastro.motorista}" required="true" size="50"
+						disabled="false" />
+					<p:message for="motorista" />
+
+				</h:panelGrid>
+
+				<p:commandButton value="Salvar" id="ajax" validateClient="true"
+					actionListener="#{cadastroMB.salvarCadastro}"
+					icon="ui-icon-circle-check" styleClass="ui-priority-primary"
+					update="frmCad" style="background-color: #82a43a;"  />
+
+				<p:commandButton value="Excluir" id="idExcluir" type="button"
+					rendered="#{cadastroMB.cadastro.id != 0}"
+					onclick="PF('excluirDialog').show()" icon=" ui-icon-trash"
+					update="frmCad" />
+
+				<p:commandButton value="Limpar Cadastro" id="ajax2"
+					actionListener="#{cadastroMB.limparFormulario}"
+					icon="  ui-icon-cancel" styleClass="ui-priority-primary"
+					update="frmCad" />
+
+			</p:panel>
+
+		</h:form>
+		<h:form id="frmConsulta">
+			<p:dataTable var="cadastro" id="gridCadastro" rowKey="#{cadastro.id}"
+				emptyMessage="Registro não Encontrado" resizableColumns="true"
+				value="#{cadastroMB.listCadastro}" rows="5" paginator="true"
+				selection="#{cadastroMB.selecionadosCadastro}"
+				paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+				rowsPerPageTemplate="5,10,15,20">
+				<f:facet name="header">
+           				Consulta de Veículos
+       			</f:facet>
+
+				<p:column selectionMode="multiple"
+					style="width:40px; text-align:center">
+				</p:column>
+
+				<p:column headerText="Código do Veículo" sortBy="#{cadastro.id}">
+					<h:outputText value="#{cadastro.id}" />
+				</p:column>
+
+				<p:column headerText="Corporação" sortBy="#{cadastro.empresa}">
+					<h:outputText value="#{cadastro.empresa}" />
+				</p:column>
+
+				<p:column headerText="Modelo" sortBy="#{cadastro.modelo}">
+					<h:outputText value="#{cadastro.modelo}" />
+				</p:column>
+
+				<f:facet name="footer">
+					<p:commandButton value="Excluir"
+						oncomplete="PF('excluirFromGridDialog').show()" ajax="true"
+						update="frmConsulta" validateClient="true" icon="ui-icon-trash"
+						actionListener="#{cadastroMB.excluirFromGrid}" />
+				</f:facet>
+
+			</p:dataTable>
+
+			<p:dialog header="Excluir" widgetVar="excluirFromGridDialog"
+				width="580" height="500" modal="true" showEffect="exclode"
+				hideEffect="exclode" resizable="false">
+				<p:outputPanel id="carDetail2" style="text-align:center;">
+					<br />
+					<p:dataTable id="displayExclusao" var="selecione"
+						value="#{cadastroMB.selecionadosCadastro}">
+						<f:facet name="header">  
+                  						  Este(s) Veículo(s) será(ão) Excluído(s)! 
+           					 </f:facet>
+
+						<p:column headerText="Código do Veículo">
+							<h:outputText value="#{selecione.id}" />
+						</p:column>
+						<p:column headerText="Nome da Corporaração">
+							<h:outputText value="#{selecione.empresa}" />
+						</p:column>
+						<f:facet name="footer">
+							<p:commandButton value="Fechar" id="idExcluirFechar2"
+								onclick="GerarPropostaDialog.hide()" icon="ui-icon-circle-close"
+								update="frmConsulta" />
+
+							<p:commandButton value="Confirma Exclusão" id="idExcluirEscola2"
+								icon="ui-icon-circle-check"
+								actionListener="#{cadastroMB.excluirCadastroList}"
+								update="frmConsulta,frmCad" />
+						</f:facet>
+					</p:dataTable>
+				</p:outputPanel>
+			</p:dialog>
+
+			<p:dialog header="Excluir Veículo" widgetVar="excluirDialog"
+				modal="true" showEffect="fade" hideEffect="fade" resizable="true">
+				<p:outputPanel id="carDetail" style="text-align:center;">
+					<p:panelGrid columns="2" columnClasses="label,value">
+
+						<p:commandButton value="Fechar" id="idExcluirFechar"
+							onclick="GerarPropostaDialog.hide()" icon="ui-icon-circle-close"
+							update="frmConsulta" />
+
+						<p:commandButton value="Confirmar Exclusão" id="idExcluirEscola"
+							icon="ui-icon-circle-check"
+							actionListener="#{cadastroMB.excluirCadastro}"
+							update="frmConsulta" />
+
+
+					</p:panelGrid>
+				</p:outputPanel>
+			</p:dialog>
+
+
+		</h:form>
+
+	</h:body>
+</f:view>
+</html>
+
