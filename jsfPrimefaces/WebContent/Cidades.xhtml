@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view contentType="text/html">
+	<h:head>
+	</h:head>
+	<h:body>
+
+		<h:form id="frmCidade">
+			<p:growl id="growl" life="3000" />
+			<p:panel id="toggleable" header="Consulta Cidade por Estado"
+				toggleable="true" closable="true" toggleSpeed="500" closeSpeed="500"
+				widgetVar="panel">
+				<h:panelGrid columns="3" id="gridCidade" style="align: center">
+					<p:outputLabel for="estado" value="Estado:" />
+					<p:selectOneMenu id="estado"
+						value="#{cidadesMB.estado.siglaEstado}" style="width:155px">
+						<f:selectItem itemLabel="Selecione Estado" itemValue="" />
+						<f:selectItems value="#{cidadesMB.listEstado}" var="est"
+							itemLabel="#{est.descricaoEstado}" itemValue="#{est.siglaEstado}" />
+						<p:ajax event="change" listener="#{cidadeMB.buscaCidadeByEstado}"
+							update="cidade" />
+					</p:selectOneMenu>
+					<p:message for="estado" />
+
+					<p:outputLabel for="cidade" value="Cidade:" />
+					<p:selectOneMenu id="cidade"
+						value="#{cidadesMB.cidade.descricaoCidade}" style="width:155px">
+						<f:selectItem itemLabel="Selecione Cidade" itemValue="" />
+						<f:selectItems value="#{cidadeMB.listCidades}" var="city"
+							itemLabel="#{city.descricaoCidade}" itemValue="#{city.id}" />
+					</p:selectOneMenu>
+					<p:message for="cidade" />
+
+
+				</h:panelGrid>
+
+
+			</p:panel>
+		</h:form>
+
+	</h:body>
+</f:view>
+</html>
+

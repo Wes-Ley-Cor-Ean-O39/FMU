@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view contentType="text/html">
+	<h:head>
+		<!-- <h:outputStylesheet name="estilo.css" library="css" />
+		 -->
+	</h:head>
+	<h:body>
+		<ui:include src="/Menu.xhtml"></ui:include>
+		<h:form id="frmCad">
+
+			<p:growl id="growl" life="3000" />
+
+			<h:inputHidden value="#{alunoMB.aluno.id}" id="id" />
+			<p:panel id="toggleable" header="Cadastro de Aluno" toggleable="true"
+				closable="true" toggleSpeed="500" closeSpeed="500" widgetVar="panel">
+				<p:messages autoUpdate="true" />
+
+
+				<h:panelGrid columns="3" id="Aluno" style="align: center">
+
+					<p:outputLabel for="escola" value="Escola:" />
+					<p:selectOneMenu id="escola" value="#{alunoMB.escola.id}"
+						required="true" style="width:155px">
+						<f:selectItem itemLabel="Selecione Escola" itemValue="" />
+						<f:selectItems value="#{alunoMB.listEscola}" var="escola"
+							itemLabel="#{escola.nome}" itemValue="#{escola.id}" />
+						<p:ajax event="change" listener="#{alunoMB.buscaSalaAulaByEscola}"
+							update="salaaula" />
+					</p:selectOneMenu>
+					<p:message for="escola" />
+
+					<p:outputLabel for="salaaula" value="Sala de Aula:" />
+					<p:selectOneMenu id="salaaula" value="#{alunoMB.salaaula.id}"
+						required="true" style="width:155px">
+						<f:selectItem itemLabel="Selecione Sala de Aula" itemValue="" />
+						<f:selectItems value="#{alunoMB.listSalaAula}" var="salaaula"
+							itemLabel="#{salaaula.descricao}" itemValue="#{salaaula.id}" />
+					</p:selectOneMenu>
+					<p:message for="salaaula" />
+
+
+					<p:outputLabel for="nome" value="Nome do Aluno:" />
+					<p:autoComplete id="nome" queryDelay="2000"
+						placeholder="Nome do Aluno" value="#{alunoMB.aluno.nome}"
+						completeMethod="#{alunoMB.complete}" size="50" required="true"
+						effect="blind" cache="true" cacheTimeout="1000" dropdown="true">
+						<p:ajax event="itemSelect" listener="#{alunoMB.onItemSelect}"
+							update="frmCad, frmConsulta" />
+					</p:autoComplete>
+					<p:message for="nome" />
+
+					<p:outputLabel for="cep" value="Cep:" />
+					<p:inputMask id="cep" value="#{alunoMB.aluno.cep}" size="9"
+						required="true" mask="99999-999" placeholder="Cep"
+						validatorMessage="Favor informar o Cep!">
+						<p:ajax event="blur" update="endereco, cidade, estado"
+							listener="#{alunoMB.buscaCep}" />
+					</p:inputMask>
+					<p:message for="cep" />
+
+					<p:outputLabel for="endereco" value="Lougraouro:" />
+					<p:inputText id="endereco" value="#{alunoMB.aluno.endereco}"
+						required="true" size="50" placeholder="Endereço" />
+					<p:message for="endereco" />
+
+					<p:outputLabel for="cidade" value="Cidade:"></p:outputLabel>
+					<p:inputText id="cidade" value="#{alunoMB.aluno.cidade}"
+						required="true" size="50" placeholder="Cidade" />
+					<p:message for="cidade" />
+
+					<p:outputLabel for="estado" value="Estado:" />
+					<p:selectOneMenu id="estado" value="#{alunoMB.aluno.estado}"
+						required="true" style="width:155px">
+						<f:selectItem itemLabel="Selecione Estado" itemValue="" />
+						<f:selectItem itemLabel="São Paulo" itemValue="SP" />
+						<f:selectItem itemLabel="Rio de Janeiro" itemValue="RJ" />
+						<f:selectItem itemLabel="Bahia" itemValue="BA" />
+					</p:selectOneMenu>
+					<p:message for="estado" />
+
+				</h:panelGrid>
+
+				<p:commandButton value="Salvar" id="ajax" validateClient="true"
+					actionListener="#{alunoMB.salvarAluno}" icon="ui-icon-circle-check"
+					styleClass="ui-priority-primary" update="id" />
+
+				<p:commandButton value="Excluir" id="idExcluir" type="button"
+					rendered="#{alunoMB.aluno.id != 0}"
+					resetValues="#{alunoMB.listNotas}"
+					onclick="PF('excluirDialogAluno').show()" icon="ui-icon-trash"
+					update="frmCad" />
+
+				<p:commandButton value="Limpar Cadastro" id="ajax2" type="reset"
+					styleClass="ui-priority-primary" icon="ui-icon-cancel" />
+
+			</p:panel>
+
+
+			<p:dialog header="Excluir Aluno" widgetVar="excluirDialogAluno"
+				width="260" height="45" modal="true" showEffect="exclode"
+				hideEffect="exclode" resizable="false">
+				<p:outputPanel id="alunoExcluir" style="text-align:center;">
+					<br />
+					<p:commandButton value="Fechar" id="idExcluirFechar3"
+						icon=" ui-icon-circle-close" onclick="GerarPropostaDialog.hide()"
+						update="frmConsulta" />
+
+					<p:commandButton value="Confirma Exclusão" id="idExcluirAluno3"
+						icon="ui-icon-circle-check"
+						actionListener="#{alunoMB.excluirAluno}"
+						update="frmCad frmConsulta" />
+				</p:outputPanel>
+			</p:dialog>
+
+
+		</h:form>
+
+
+		<h:form id="frmConsulta">
+
+
+			<p:dataTable id="listNotas" var="nota" value="#{alunoMB.listNotas}"
+				selection="#{alunoMB.selecionadosNotas}" rowKey="#{nota.id}"
+				rows="10" paginator="true"
+				paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+				rowsPerPageTemplate="10,15,20,25,30">
+
+				<p:column selectionMode="multiple"
+					style="width:40px; text-align:center">
+				</p:column>
+
+
+				<p:column headerText="Descrição">
+					<h:outputText value="#{nota.descricao}" />
+				</p:column>
+
+				<p:column headerText="Data Prova">
+					<h:outputText value="#{nota.dataprova}">
+						<f:convertDateTime pattern="dd/MM/yyyy" />
+					</h:outputText>
+				</p:column>
+
+				<p:column headerText="Nota">
+					<h:outputText value="#{nota.nota}" />
+				</p:column>
+				<f:facet name="footer">
+					<p:commandButton value="Adicionar Notas"
+						oncomplete="PF('adicionarNotasDialog').show()"
+						icon=" ui-icon-circle-plus" />
+				</f:facet>
+
+				<f:facet name="footer">
+					<p:commandButton value="Excluir"
+						oncomplete="PF('excluirFromGridNota').show()" ajax="true"
+						update="frmConsulta" validateClient="true" icon=" ui-icon-trash"
+						actionListener="#{alunoMB.excluirFromGrid}" />
+				</f:facet>
+
+			</p:dataTable>
+
+
+
+			<p:dialog header="Excluir" widgetVar="excluirFromGridNota"
+				width="380" height="300" modal="true" showEffect="exclode"
+				hideEffect="exclode" resizable="true">
+				<p:outputPanel id="notaDetail" style="text-align:center;">
+					<br />
+
+					<p:dataTable id="displayExclusaoNota" var="nota"
+						value="#{alunoMB.selecionadosNotas}">
+						<f:facet name="header">  
+                  						  Nota(s) será(am) Excluido(s)! 
+           					 </f:facet>
+
+						<p:column headerText="Código do Aluno">
+							<h:outputText value="#{nota.id}" />
+						</p:column>
+						<p:column headerText="Descrição da Nota">
+							<h:outputText value="#{nota.descricao}" />
+						</p:column>
+						<p:column headerText="Nota">
+							<h:outputText value="#{nota.nota}" />
+						</p:column>
+
+						<f:facet name="footer">
+							<p:commandButton value="Fechar" id="idExcluirFechar2"
+								icon=" ui-icon-circle-close"
+								onclick="GerarPropostaDialog.hide()" update="frmConsulta" />
+
+							<p:commandButton value="Confirma Exclusão" id="idExcluirAluno2"
+								icon="ui-icon-circle-check"
+								actionListener="#{alunoMB.excluirNotaList}"
+								update="frmConsulta,frmCad" />
+						</f:facet>
+
+
+					</p:dataTable>
+				</p:outputPanel>
+			</p:dialog>
+
+
+			<p:dialog header="Adicionar Notas" widgetVar="adicionarNotasDialog"
+				modal="true" showEffect="fade" hideEffect="fade" resizable="false">
+				<p:outputPanel id="carDetail">
+					<h:panelGrid columns="2" cellpadding="5">
+
+						<h:outputText value="Desrição da Nota" />
+						<p:inputText id="descricao" value="#{alunoMB.nota.descricao}"
+							size="50" />
+
+						<h:outputText value="Data da Prova" />
+						<p:calendar id="dataProva" value="#{alunoMB.nota.dataprova}"
+							pattern="dd/MM/yyyy" mask="true" />
+
+						<h:outputText value="Nota" />
+						<p:inputText id="nota" value="#{alunoMB.nota.nota}"
+							pattern="99.99" mask="true" />
+
+					</h:panelGrid>
+
+					<p:commandButton value="Adicionar Notas" id="ajax"
+						rendered="#{alunoMB.aluno.id != 0}" validateClient="true"
+						actionListener="#{alunoMB.salvarNota}"
+						styleClass="ui-priority-primary" style="align floar: center"
+						onclick="dialog.hide()" icon="ui-icon-circle-check" />
+					<p:commandButton onclick="dialog.hide()" process="@none"
+						value="Fechar" icon=" ui-icon-circle-close" />
+
+
+				</p:outputPanel>
+			</p:dialog>
+		</h:form>
+	</h:body>
+</f:view>
+</html>

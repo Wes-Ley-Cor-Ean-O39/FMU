@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view contentType="text/html">
+	<h:head>
+	</h:head>
+	<h:body>
+
+		<h:form>
+
+
+			<h3>Overlay</h3>
+			<font></font>
+			<p:commandButton id="dynaButton" value="Show" type="button"
+				icon="ui-icon-extlink" />
+			<font></font>
+			<p:menu overlay="true" trigger="dynaButton" my="left top"
+				at="left bottom">
+				<font></font>
+				<p:submenu label="Ajax">
+					<font></font>
+					<p:menuitem value="Save" actionListener="#{menuView.save}"
+						update="messages" icon="ui-icon-disk" />
+					<font></font>
+					<p:menuitem value="Update" actionListener="#{menuView.update}"
+						update="messages" icon="ui-icon-arrowrefresh-1-w" />
+					<font></font>
+				</p:submenu>
+				<font></font>
+				<p:submenu label="Non-Ajax">
+					<font></font>
+					<p:menuitem value="Delete" actionListener="#{menuView.delete}"
+						update="messages" ajax="false" icon="ui-icon-close" />
+					<font></font>
+				</p:submenu>
+				<font></font>
+				<p:submenu label="Navigations">
+					<font></font>
+					<p:menuitem value="External" url="http://www.primefaces.org"
+						icon="ui-icon-home" />
+					<font></font>
+					<p:menuitem value="Internal" icon="ui-icon-star" />
+					<font></font>
+				</p:submenu>
+				<font></font>
+			</p:menu>
+			<font></font>
+			<font></font>
+
+
+		</h:form>
+	</h:body>
+</f:view>
+</html>

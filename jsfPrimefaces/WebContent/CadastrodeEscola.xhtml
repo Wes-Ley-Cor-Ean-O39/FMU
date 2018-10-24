@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+</h:head>
+<h:body>
+	<ui:include src="/Menu.xhtml"></ui:include>
+
+	<h:form>
+
+		<p:growl id="growl" life="2000" />
+
+		<h:inputHidden value="#{escolaMB.escola.id}" id="id" />
+		<p:panel id="toggleable" header="Cadastro de Escola" toggleable="true"
+			closable="true" toggleSpeed="500" closeSpeed="500" widgetVar="panel"
+			style="margin-bottom:20px;">
+
+
+			<p:messages autoUpdate="true" />
+
+			<h:panelGrid columns="3" id="escola" style="align: center">
+				<p:outputLabel for="nome" value="Nome da Escola:" />
+				<p:inputText id="nome" value="#{escolaMB.escola.nome}"
+					required="true" size="50" />
+				<p:message for="nome" />
+
+				<p:outputLabel for="cep" value="Cep:" />
+				<p:inputMask id="cep" value="#{escolaMB.escola.cep}" size="9"
+					required="true" mask="99999-999" />
+				<p:message for="cep" />
+
+				<p:outputLabel for="endereco" value="Lougraouro:" />
+				<p:inputText id="endereco" value="#{escolaMB.escola.endereco}"
+					required="true" size="50" />
+				<p:message for="endereco" />
+
+				<p:outputLabel for="cidade" value="Cidade:"></p:outputLabel>
+				<p:inputText id="cidade" value="#{escolaMB.escola.cidade}"
+					required="true" size="50" />
+				<p:message for="cidade" />
+
+				<p:outputLabel for="estado" value="Estado:" />
+				<p:selectOneMenu id="estado" value="#{escolaMB.escola.estado}"
+					required="true" style="width:155px">
+					<f:selectItem itemLabel="Selecione Estado" itemValue="" />
+					<f:selectItem itemLabel="São Paulo" itemValue="SP" />
+					<f:selectItem itemLabel="Rio de Janeiro" itemValue="RJ" />
+					<f:selectItem itemLabel="Bahia" itemValue="BA" />
+					<f:selectItem itemLabel="Maranhão" itemValue="MA" />
+				</p:selectOneMenu>
+				<p:message for="estado" />
+
+				<!-- <p:outputLabel for="dtnascimento" value="Data de Nascimento:" />
+				<p:inputMask id="dtnascimento"  size="10" required="true" mask="99/99/9999" />
+				<p:message for="dtnascimento" /> -->
+
+
+			</h:panelGrid>
+			<p:commandButton value="Salvar" id="ajax" validateClient="true"
+				actionListener="#{escolaMB.salvarEscola}"
+				styleClass="ui-priority-primary" update="id" />
+		</p:panel>
+'
+
+		
+
+
+	</h:form>
+
+</h:body>
+</html>
