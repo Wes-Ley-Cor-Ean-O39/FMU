@@ -1,0 +1,31 @@
+    <!-- EXEMPLO-->
+
+ <!--- METODO BUSCA CEP MB JAVA -->
+
+
+	public void buscaCep(AjaxBehaviorEvent event) {
+		Document doc;
+		try {
+			doc = Jsoup.connect("https://solutioin.com/toth/services/cepservice/consultarcep/"
+					+ fornecedor.getCep().replaceAll("-", "")).get();
+			Elements links = doc.getAllElements();
+			fornecedor.setEndereco(links.get(8).text());
+			fornecedor.setCidade(links.get(9).text());
+			fornecedor.setBairro(links.get(5).text());
+			fornecedor.setEstado(links.get(7).text());
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+<!-- JSF XHTML CAMPO CEP/ CHAMADA COM AJAX -->
+
+                                        <p:outputLabel for="cep" value="Cep:" />
+					<p:inputMask id="cep" value="#{fornecedorMB.fornecedor.cep}"
+						size="9" required="true" mask="99999-999"
+						validatorMessage="Favor informar o Cep!">
+						<p:ajax event="blur" update="endereco, cidade, bairro, estado"
+							listener="#{fornecedorMB.buscaCep}" />
+					</p:inputMask>
+					<p:message for="cep" />
