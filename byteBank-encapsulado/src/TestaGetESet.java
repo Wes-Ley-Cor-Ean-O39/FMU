@@ -3,12 +3,11 @@ public class TestaGetESet {
 
 	public static void main(String[] args) {
 
-		Conta conta = new Conta();
-
-		// conta.numero = 1445;
-		conta.setNumero(1337);
-		conta.setAgencia(1158);
-		conta.setSaldo(3500);
+		Conta conta = new Conta(123, 456);
+		
+		Conta contaDoKin = new Conta(1158, 22791);
+		Conta contaDoCorea = new Conta(879, 20019);
+		Conta contaDoManoAe = new Conta(2289, 908234);
 
 		// conta.titular = "Kin";
 		// kin.setNome("Wesley");
@@ -29,9 +28,15 @@ public class TestaGetESet {
 		titularDaConta.setProfissao("Programador");
 
 		System.out.println(titularDaConta.getProfissao());
-		
+
 		System.out.println(kin);
 		System.out.println(conta);
+		
+		System.out.println(Conta.getTotal());
+		
+		System.out.println(contaDoCorea);
+		System.out.println(contaDoKin);
+		System.out.println(contaDoManoAe);
 
 	}
 
