@@ -2,6 +2,7 @@
 public class Gerente extends Funcionario {
 
 	private int senha;
+	private String login;
 
 	public Gerente() {
 
@@ -15,8 +16,18 @@ public class Gerente extends Funcionario {
 		}
 	}
 
+	// sobrecarga de método
+	public boolean autentica(String login, int senha) {
+		if (this.login == login && this.senha == senha) {
+			return true;
+		} else {
+			return false;
+		}
+		// implementacao omitida
+	}
+
 	public double getBonificacao() {
-		return this.getSalario();
+		return super.getBonificacao() + super.getSalario();
 	}
 
 	public int getSenha() {

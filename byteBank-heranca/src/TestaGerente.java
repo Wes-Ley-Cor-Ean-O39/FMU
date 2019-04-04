@@ -14,10 +14,12 @@ public class TestaGerente {
 		System.out.println(gerente.getSalario());
 
 		// gerente.setSenha(123);
-		boolean autenticou = gerente.autentica(0);
+		boolean autenticou = gerente.autentica(null, 0);
 
 		System.out.println(autenticou);
 
+		System.out.println(gerente.getBonificacao());
+		
 	}
 
 }
