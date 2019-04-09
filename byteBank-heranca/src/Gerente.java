@@ -19,8 +19,10 @@ public class Gerente extends Funcionario {
 	// sobrecarga de método
 	public boolean autentica(String login, int senha) {
 		if (this.login == login && this.senha == senha) {
+			System.out.println("Logado com Sucesso");
 			return true;
-		} else {
+		} else { 
+			System.out.println("Login ou Senha Incorreto! Tente Novamente");
 			return false;
 		}
 		// implementacao omitida
