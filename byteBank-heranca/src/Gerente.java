@@ -1,5 +1,5 @@
 
-public class Gerente extends Funcionario {
+public class Gerente extends Funcionario implements Autenticavel {
 
 	private int senha;
 	private String login;
@@ -21,7 +21,7 @@ public class Gerente extends Funcionario {
 		if (this.login == login && this.senha == senha) {
 			System.out.println("Logado com Sucesso");
 			return true;
-		} else { 
+		} else {
 			System.out.println("Login ou Senha Incorreto! Tente Novamente");
 			return false;
 		}
@@ -29,7 +29,7 @@ public class Gerente extends Funcionario {
 	}
 
 	public double getBonificacao() {
-		return super.getBonificacao() + super.getSalario();
+		return super.getSalario();
 	}
 
 	public int getSenha() {
