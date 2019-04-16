@@ -5,4 +5,6 @@ public abstract interface Autenticavel {
 
 	public boolean autentica(int senha);
 
+	boolean autentica(String login, int senha);
+
 }

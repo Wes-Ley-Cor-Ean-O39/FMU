@@ -2,6 +2,8 @@
 public class TesteContas {
 
 	public static void main(String[] args) {
+		// classe abstrata
+		// Conta c = new Conta();
 
 		ContaCorrente cc = new ContaCorrente(111, 111);
 		cc.deposita(100.0);
