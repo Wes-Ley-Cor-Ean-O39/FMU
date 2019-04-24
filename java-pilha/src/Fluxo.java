@@ -4,10 +4,10 @@ public class Fluxo {
 		System.out.println("Ini do main");
 		try {
 			metodo1();
-		} catch (ArithmeticException | NullPointerException e) {
+		} catch (Exception e) {
 			String msg = e.getMessage();
 			System.out.println("Exception: " + msg);
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 
 		System.out.println("Fim do main");
@@ -25,7 +25,7 @@ public class Fluxo {
 			System.out.println(i);
 			// Conta c = null;
 			// c.deposita();
-			//int a = i / 0;
+			int a = i / 0;
 		}
 		System.out.println("Fim do metodo2");
 	}
