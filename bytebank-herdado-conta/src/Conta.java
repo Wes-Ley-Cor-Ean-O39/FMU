@@ -7,6 +7,14 @@ public abstract class Conta {
 	private static int total = 0;
 
 	public Conta(int agencia, int numero) {
+		if (agencia < 1) {
+			throw new IllegalArgumentException("Agencia inválida");
+		}
+
+		if (numero < 1) {
+			throw new IllegalArgumentException("Número da Conta Inválido");
+		}
+
 		Conta.total++;
 		// System.out.println("O total de contas é " + Conta.total);
 		this.agencia = agencia;

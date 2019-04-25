@@ -9,7 +9,6 @@ public class Fluxo {
 			System.out.println("Exception: " + msg);
 			e.printStackTrace();
 		}
-
 		System.out.println("Fim do main");
 	}
 
@@ -25,7 +24,7 @@ public class Fluxo {
 			System.out.println(i);
 			// Conta c = null;
 			// c.deposita();
-			int a = i / 0;
+			//int a = i / 0;
 		}
 		System.out.println("Fim do metodo2");
 	}
