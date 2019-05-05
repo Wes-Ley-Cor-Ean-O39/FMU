@@ -47,7 +47,8 @@ public class TesteString {
 		String frase = "nome;teste;10";
 		String array[] = new String[3];
 
-		array = frase.split(";"); // quebra a string em partes
+		array = frase.split(";"); // quebra a string em partesmd
+		
 
 		System.out.println(array[0]);
 		System.out.println(array[1]);

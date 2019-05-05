@@ -12,4 +12,11 @@ public class ContaPoupança extends Conta {
 
 	}
 
+	@Override
+	public String toString() {
+		return "ContaPoupança [saldo=" + saldo + ", toString()=" + super.toString() + ", getSaldo()=" + getSaldo()
+				+ ", getNumero()=" + getNumero() + ", getAgencia()=" + getAgencia() + ", getTitular()=" + getTitular()
+				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + "]";
+	}
+
 }

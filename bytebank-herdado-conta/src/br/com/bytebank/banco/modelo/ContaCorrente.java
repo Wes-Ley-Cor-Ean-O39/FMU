@@ -22,4 +22,12 @@ public class ContaCorrente extends Conta implements Tributavel {
 		return super.saldo * 0.01;
 	}
 
+	@Override
+	public String toString() {
+		return "ContaCorrente [saldo=" + saldo + ", getValorImposto()=" + getValorImposto() + ", toString()="
+				+ super.toString() + ", getSaldo()=" + getSaldo() + ", getNumero()=" + getNumero() + ", getAgencia()="
+				+ getAgencia() + ", getTitular()=" + getTitular() + ", getClass()=" + getClass() + ", hashCode()="
+				+ hashCode() + "]";
+	}
+
 }
