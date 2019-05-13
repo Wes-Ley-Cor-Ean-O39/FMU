@@ -38,6 +38,7 @@ public class TesteArrayEstadosBrasleiros {
 		ArrayList<String> nova = new ArrayList<String>(listaEstado);
 
 		System.out.println(nova.get(13));
+		
 
 	}
 

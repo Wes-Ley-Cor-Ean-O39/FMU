@@ -55,7 +55,18 @@ public abstract class Conta {
 
 	@Override
 	public String toString() {
-		return "Conta [saldo=" + saldo + ", agencia=" + agencia + ", numero=" + numero + ", titular=" + titular + "]";
+		return "Conta [agencia=" + agencia + ", numero=" + numero + "]";
+	}
+
+	public boolean ehIgual(Object ref) {
+		Conta outra = (Conta) ref;
+		if (this.agencia != outra.agencia) {
+			return false;
+		}
+		if (this.numero != outra.numero) {
+			return false;
+		}
+		return true;
 	}
 
 	public double getSaldo() {
