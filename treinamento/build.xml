@@ -1,0 +1,25 @@
+<project name="tarefas" default="empacotar">
+
+	<target name="limpar">
+		<delete dir="build" />
+	</target>
+
+	<target name="init" depends="limpar">
+		<mkdir dir="build" />
+	</target>
+
+	<target name="compilar" depends="init">
+		<javac srcdir="src" destdir="build">
+			<classpath>
+				<fileset dir="lib">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="empacotar" depends="compilar">
+		<jar destfile="build/treinamento.jar" basedir="build" />
+	</target>
+
+</project>
