@@ -1,0 +1,27 @@
+<project name="tarefas" default="empacotar">
+
+	<property name="build.dir" value="Build"/>
+	
+	<target name="limpar">
+		<delete dir="${build.dir}" />
+	</target>
+
+	<target name="init" depends="limpar">
+		<mkdir dir="${build.dir}" />
+	</target>
+
+	<target name="compilar" depends="init">
+		<javac srcdir="src" destdir="${build.dir}">
+			<classpath>
+				<fileset dir="lib">
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="empacotar" depends="compilar">
+		<jar destfile="${build.dir}/byteBank.jar" basedir="${build.dir}" />
+	</target>
+
+</project>
