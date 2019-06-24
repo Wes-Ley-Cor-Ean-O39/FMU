@@ -83,7 +83,7 @@ public class Livro implements Serializable {
 	}
 
 	public void removeAutor(Autor autor) {
-		this.autores.remove(autor);		
+		this.autores.remove(autor);
 	}
 
 }
