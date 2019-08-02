@@ -1,0 +1,4 @@
+22/04/2019 16:20:50 INFO  [Imag      ] StartService                                       main                           - iniciando servico imag versao: 17763 .
+22/04/2019 16:20:51 INFO  [Imag      ] XmlMarshall                                        unmarshaller                   - Iniciando leitura e validacao do schema do XML!
+22/04/2019 16:20:53 INFO  [Imag      ] XmlMarshall                                        unmarshaller                   - Iniciando leitura e validacao do schema do XML: CTAS_DESMAT.xml .
+22/04/2019 16:20:55 INFO  [Imag      ] GerenciadorTarefa                                  adicionar                      - Adicionando tarefa: CTAS_DESMAT ao gerenciador.

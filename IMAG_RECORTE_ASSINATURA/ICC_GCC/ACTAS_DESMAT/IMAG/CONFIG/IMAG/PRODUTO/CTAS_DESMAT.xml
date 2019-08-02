@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:produto xmlns:tns="http://www.wvs.com.br/imag" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wvs.com.br/imag imag.xsd ">
+	
+	<configuracao>
+		<capacidadeMaximaEBCDIC>1</capacidadeMaximaEBCDIC>
+		<prefixoCartaoAssinatura>c_</prefixoCartaoAssinatura>
+		<caminhoOrigem>C:\ICC_GCC\ACTAS_DESMAT\IMAG\ORIGEM</caminhoOrigem>
+		<caminhoDestino>C:\ICC_GCC\ACTAS_DESMAT\IMAG\DESTINO</caminhoDestino>
+		<criarArquivoTopDestino>false</criarArquivoTopDestino>
+		<caminhoRejeitado>C:\ICC_GCC\ACTAS_DESMAT\IMAG\REJEITADO</caminhoRejeitado>
+		<caminhoSaidaEbcdic>C:\ICC_GCC\ACTAS_DESMAT\IMAG\\EBCDIC</caminhoSaidaEbcdic>
+		<sleep>1</sleep>
+		<tempRastreabilidade>C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO_RAST</tempRastreabilidade>
+		<caminhoRejeitadosRastreabilidade>C:\ICC_GCC\ACTAS_DESMAT\IMAG\CSV_REJEITADO_RAST</caminhoRejeitadosRastreabilidade>
+		<descompactarTemp>C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO</descompactarTemp>
+	</configuracao>
+	
+	<posicaoCsvGccd origem="2">
+		<nomeDoArquivo>24</nomeDoArquivo>
+		<agencia>20</agencia>
+		<conta>21</conta>
+		<tipoDaConta>22</tipoDaConta>
+		<cpf>11</cpf>
+	</posicaoCsvGccd>
+
+	<!--“true”  - Habilita a extração do arquivo “.rast” de dentro da pasta “ZIP”.  Existindo o mesmo é enviado para a pasta de carga da rastreabilidade.
+	“false” – Indica que não há arquivo .rast a ser extraído da pasta “ZIP”.-->
+	<rastreabilidade gerar="true" moverRastreabilidade="false" trigger="true" validarIntegridade="true">
+		
+		<niur posicao="31" fixo=""/>
+		<niurPrincipal posicao="32" fixo=""/>
+		<hashImagem posicao="33" fixo=""/>
+		<codigoFluxoArmazenamento posicao="34" fixo="1"/>
+		<numeroProcesso posicao="35" fixo=""/>
+		<bancoCaptura posicao="36" fixo=""/>
+		<bancoProcessamento posicao="37" fixo=""/>
+		<banco posicao="38" fixo=""/>
+		<agenciaCaptura posicao="5" fixo=""/>
+		<agenciaProcessamento posicao="40" fixo=""/>
+		<agencia posicao="21" fixo=""/>
+		<conta posicao="22" fixo=""/>
+		<cpfCnpj posicao="6" fixo=""/>
+		<filialCnpj posicao="10" fixo=""/>	
+		<controleCpfCnpj posicao="15" fixo=""/>
+		<!-- O icor pessoa auxilia na identificacao do tipo do documento se CPF/CNPJ, quando nao existir, a logica para determinar se o campo é cpf ou cnpj sera pela quantidade de caracteres (sendo o 3 os campos na mesma posicao do csv) -->
+		<icorPessoa posicao="13" fixo=""/>
+		<cmc7 posicao="39" fixo=""/>
+		<situacaoIntegridade posicao="" fixo="2"/>
+		<situacaoProcessamento posicao="" fixo="0"/>
+		<situacaoDocumento posicao="40" fixo="1"/>
+		<mimeType posicao="7" fixo=""/>
+		<nomeArquivo posicao="25" fixo=""/>
+		<codigoDocumento posicao="1" fixo=""/>
+		<codigoServicoRecepcao>1</codigoServicoRecepcao>
+		
+	</rastreabilidade>
+	
+</tns:produto>

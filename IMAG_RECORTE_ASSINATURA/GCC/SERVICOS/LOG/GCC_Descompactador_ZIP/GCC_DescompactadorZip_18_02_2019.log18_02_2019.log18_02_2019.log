@@ -1,0 +1,67 @@
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            Iniciando leitura do XML de configuração de produtos.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            Caminho log: C:\GCC\SERVICOS\APP\GCC_Descompactador_ZIP\produtos.xml  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            xml.Load - ok  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Produto ACTA_LEGADO_GCDL01_CRIPTOGRAFADO  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Diretório origem - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP\ORIGEM\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Diretório destino - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP\DESTINO\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Diretório rejeitados - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP\REJEITADOS\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Diretório zip Vazios - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP\RETORNO\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) iQtdeThreads: 2  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Será criado um diretório para cada arquivo zip descompactado.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Os arquivos zips serão validados durante a extração.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Serão permitidos diretórios dentro do arquivo zip  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Serão mantidos 3 dias de backup armazenados.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Diretório de backup - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP\BACKUP\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Arquivos de confirmação para: 'C:\ICC_GCC\ACTA_LEGADO\ZIP\CONFIRMACAO'  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Tempo de descanso para leitura do diretório de 300 segundos.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Criando instância de processamento do produto.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Instâcia de processamento criada.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Lista de ordem de extração criada.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Tipos de arquivos que serão apagados((origem)top (origem).txt) - Obs.: Arquivos dentro do zip não são apagados.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Tipos de arquivos a serem processados (detr zip)  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Extração de zip configurada para este produto.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Produto ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Diretório origem - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP_01\ORIGEM\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Diretório destino - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP_01\DESTINO\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Diretório rejeitados - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP_01\REJEITADOS\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) iQtdeThreads: 2  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Todos os arquivos serão descompactados no mesmo diretório.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Os arquivos zips NÃO serão validados durante a extração.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Serão mantidos 3 dias de backup armazenados.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Diretório de backup - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP_01\BACKUP\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Arquivos de confirmação para: 'C:\ICC_GCC\ACTA_LEGADO\ZIP_01\CONFIRMACAO'  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Tempo de descanso para leitura do diretório de 300 segundos.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Criando instância de processamento do produto.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Instâcia de processamento criada.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Lista de ordem de extração criada.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Tipos de arquivos que serão apagados((origem)*) - Obs.: Arquivos dentro do zip não são apagados.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Tipos de arquivos a serem processados (detr zip)  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Extração de zip configurada para este produto.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Produto ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Diretório origem - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP_02\ORIGEM\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Diretório destino - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP_02\DESTINO\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Diretório rejeitados - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP_02\REJEITADOS\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) iQtdeThreads: 2  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Será criado um diretório para cada arquivo zip descompactado.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Os arquivos zips serão validados durante a extração.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Serão permitidos diretórios dentro do arquivo zip  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Serão mantidos 3 dias de backup armazenados.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Diretório de backup - ok: C:\ICC_GCC\ACTA_LEGADO\ZIP_02\BACKUP\  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Arquivos de confirmação para: 'C:\ICC_GCC\ACTA_LEGADO\ZIP_02\CONFIRMACAO'  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Tempo de descanso para leitura do diretório de 300 segundos.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Criando instância de processamento do produto.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Instâcia de processamento criada.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Lista de ordem de extração criada.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Tipos de arquivos que serão apagados((origem)top) - Obs.: Arquivos dentro do zip não são apagados.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Tipos de arquivos a serem processados (detr zip)  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Extração de zip configurada para este produto.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          readXmlConfiguration            Leitura do XML de configuração de produtos realizadas com sucesso.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          processProduct                  (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO) Iniciando processamento para o produto.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          processProduct                  (ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM) Iniciando processamento para o produto.  
+18/02/2019 11:27:13  INFO   GCC_DescompactadorZip          processProduct                  (ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS) Iniciando processamento para o produto.  
+18/02/2019 11:30:13  DEBUG  GCC_DescompactadorZip          verificaThreads                 Thread.isAlive = True(ACTA_LEGADO_GCDL01_CRIPTOGRAFADO)  
+18/02/2019 11:30:13  DEBUG  GCC_DescompactadorZip          verificaThreads                 Thread.isAlive = True(ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM)  
+18/02/2019 11:30:13  DEBUG  GCC_DescompactadorZip          verificaThreads                 Thread.isAlive = True(ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS)  
+18/02/2019 11:30:13  INFO   GCC_DescompactadorZip          manutLogs                       Executando CleanUp Logs  
+18/02/2019 11:30:13  INFO   GCC_DescompactadorZip          manutLogs                       Fim CleanUp Logs  
+18/02/2019 11:31:10  INFO   GCC_DescompactadorZip          OnStop                          Serviço parado.  

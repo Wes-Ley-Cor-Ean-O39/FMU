@@ -12,7 +12,7 @@
 		 -->
 	</h:head>
 	<h:body>
-		<ui:include src="/Menu.xhtml"></ui:include>
+		<ui:include src="/menu.xhtml"></ui:include>
 		<h:form id="frmCad">
 
 			<p:growl id="growl" life="3000" />
@@ -38,7 +38,7 @@
 
 					<p:outputLabel for="salaaula" value="Sala de Aula:" />
 					<p:selectOneMenu id="salaaula" value="#{alunoMB.salaaula.id}"
-						required="true" style="width:155px">
+						required="true" style="width:185px">
 						<f:selectItem itemLabel="Selecione Sala de Aula" itemValue="" />
 						<f:selectItems value="#{alunoMB.listSalaAula}" var="salaaula"
 							itemLabel="#{salaaula.descricao}" itemValue="#{salaaula.id}" />

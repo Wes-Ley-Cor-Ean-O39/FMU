@@ -27,6 +27,15 @@ public class DesbravadorDao {
 		factory.close();
 	}
 
+	public static void alterarDesbravador(Desbravador desbravador){
+		EntityManager em = getEntityManager();
+		em.getTransaction().begin();
+		em.merge();
+		em.getTransaction().commit();
+		em.close();
+		factory.close();
+	}
+
 	public static void excluirDesbravador(Desbravador desbravador) {
 		EntityManager em = getEntityManager();
 		try {

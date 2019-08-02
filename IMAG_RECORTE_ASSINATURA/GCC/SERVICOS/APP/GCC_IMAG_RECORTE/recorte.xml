@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tns:recorte xmlns:tns="http://www.wvs.com.br/recorte" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.wvs.com.br/recorte recorte.xsd ">
+ 
+  <documentos>
+    <documento altura="2338" largura="1653" rangeDeCorte="100">
+      <area altura="1122" largura="380" posicaoX="500" posicaoY="1203" orientacao="RETRATO"/>
+    </documento>
+    
+    <documento altura="1224" largura="840" rangeDeCorte="100">
+      <area altura="1160" largura="380" posicaoX="390" posicaoY="40" orientacao="RETRATO"/>
+    </documento>
+    
+    <documento altura="1673" largura="1232" rangeDeCorte="100">
+      <area altura="340" largura="1170" posicaoX="30" posicaoY="460" orientacao="RETRATO"/>
+    </documento>
+    
+    <documento altura="1754" largura="1240" rangeDeCorte="100">
+      <area altura="800" largura="230" posicaoX="430" posicaoY="860" orientacao="RETRATO"/>
+    </documento>
+  </documentos>
+  
+  <documentosAtic>
+    <documentoAtic nome="cartaomod1012p">
+      <area altura="1140" largura="360" posicaoX="390" posicaoY="60" orientacao="RETRATO"/>
+    </documentoAtic>
+    
+    <documentoAtic nome="cartaomod1012pe">
+      <area altura="263" largura="1042" posicaoX="291" posicaoY="609" orientacao="RETRATO"/>
+    </documentoAtic>
+    
+    <documentoAtic nome="cartaomod10138e">
+      <area altura="1170" largura="330" posicaoX="460" posicaoY="1110" orientacao="RETRATO"/>
+    </documentoAtic>
+    
+    <documentoAtic nome="cartaomod12181epf">
+      <area altura="300" largura="1140" posicaoX="30" posicaoY="510" orientacao="RETRATO"/>
+    </documentoAtic>
+    
+    <documentoAtic nome="cartaomod1219pepj">
+      <area altura="300" largura="1140" posicaoX="30" posicaoY="510" orientacao="RETRATO"/>
+    </documentoAtic>
+    
+    <documentoAtic nome="cartaomod13455e">
+      <area altura="1150" largura="170" posicaoX="540" posicaoY="1150" orientacao="RETRATO"/>
+    </documentoAtic>
+  </documentosAtic>
+  
+</tns:recorte>

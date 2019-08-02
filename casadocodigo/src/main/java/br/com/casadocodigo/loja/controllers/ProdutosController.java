@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
@@ -45,6 +46,7 @@ public class ProdutosController {
 	}
 	
 	@RequestMapping(method=RequestMethod.POST)
+	@CacheEvict(value="produtosHome", allEntries=true)
 	public ModelAndView gravar(MultipartFile sumario, @Valid Produto produto, BindingResult result, 
 				RedirectAttributes redirectAttributes){
 		
@@ -57,9 +59,9 @@ public class ProdutosController {
 		
 		dao.gravar(produto);
 		
-		redirectAttributes.addFlashAttribute("sucesso", "Produto cadastrado com sucesso!");
+		redirectAttributes.addFlashAttribute("message", "Produto cadastrado com sucesso!");
 		
-		return new ModelAndView("redirect:produtos");
+		return new ModelAndView("redirect:/produtos");
 	}
 	
 	@RequestMapping( method=RequestMethod.GET)
@@ -77,4 +79,11 @@ public class ProdutosController {
 	    modelAndView.addObject("produto", produto);
 	    return modelAndView;
 	}
+	
+//	@RequestMapping("/{id}")
+//	@ResponseBody
+//	public Produto detalheJson(@PathVariable("id") Integer id){
+//	    Produto produto = dao.find(id);
+//	    return produto;
+//	}
 }

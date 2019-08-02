@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<configuracao>
+
+	<produtos>
+	
+		<produto nome="ACTA2025_DESMATFINAL_ACTA06CONT" desempacotaZip="false" buscaTrigger="false" geraTrigger="true" intervalo="1" arquivosPorThrea="5" threads="3">
+			
+			<desempacotar>tif tiff csv jpg jpeg pdf</desempacotar>
+			<origem>C:\ICC_GCC\DESEMPACOTADOR\Origem</origem>
+			<destino>C:\ICC_GCC\DESEMPACOTADOR\Destino</destino>
+			<rejeitado>C:\ICC_GCC\DESEMPACOTADOR\Rejeitado</rejeitado>
+			<destinoCsv>C:\ICC_GCC\DESEMPACOTADOR\Processado</destinoCsv>
+			<dirRastreabilidade>C:\ICC_GCC\DESEMPACOTADOR\Rastreado</dirRastreabilidade>
+			<temp>C:\ICC_GCC\DESEMPACOTADOR\Temp</temp>
+			<tempRastreabilidade>C:\ICC_GCC\DESEMPACOTADOR\RastreabilidadeTemp</tempRastreabilidade>
+			<caminhoLogRastreabilidade>C:\ICC_GCC\DESEMPACOTADOR/Logs</caminhoLogRastreabilidade>
+			<caminhoRejeitadosRastreabilidade>C:\ICC_GCC\DESEMPACOTADOR/Rejeitado</caminhoRejeitadosRastreabilidade>
+			
+			<!-- Atributo moverRastreabilidade é para dizer se vem da agência ou não -->
+			<rastreabilidade gerar="true" moverRastreabilidade="false" trigger="true" validarIntegridade="true">
+			
+				<niur posicao="30" fixo=""/>
+				<niurPrincipal posicao="31" fixo=""/>
+				<hashImagem posicao="32" fixo=""/>
+				<codigoFluxoArmazenamento posicao="33" fixo="1"/>
+				<numeroProcesso posicao="34" fixo=""/>
+				<bancoCaptura posicao="35" fixo=""/>
+				<bancoProcessamento posicao="36" fixo=""/>
+				<banco posicao="37" fixo=""/>
+				<agenciaCaptura posicao="5" fixo=""/>
+				<agenciaProcessamento posicao="38" fixo=""/>
+				<agencia posicao="20" fixo=""/>
+				<conta posicao="21" fixo=""/>
+				<cpfCnpj posicao="12" fixo=""/>
+				<filialCnpj posicao="13" fixo=""/>
+				<controleCpfCnpj posicao="14" fixo=""/>
+				<!-- O icor pessoa auxilia na identificacao do tipo do documento se CPF/CNPJ, quando nao existir, a logica para determinar se o campo é cpf ou cnpj sera pela quantidade de caracteres (sendo o 3 os campos na mesma posicao do csv) -->
+				<icorPessoa posicao="13" fixo=""/>
+				<cmc7 posicao="" fixo=""/>
+				<situacaoIntegridade posicao="" fixo="1"/>
+				<situacaoProcessamento posicao="" fixo="0"/>
+				<situacaoDocumento posicao="40" fixo="1"/>
+				<mimeType posicao="7" fixo=""/>
+				<nomeArquivo posicao="25" fixo=""/>
+				<codigoDocumento posicao="1" fixo=""/>
+				<codigoServicoRecepcao>1</codigoServicoRecepcao>
+			
+			</rastreabilidade>
+			
+		</produto>
+		
+	</produtos>
+	
+</configuracao>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<f:view contentType="text/html">
+
+	<ui:composition template="_template.xhtml">
+
+		<ui:define name="title">Consultar Desbravador</ui:define>
+
+		<ui:define name="titulo">
+			<p:outputPanel>Consulta</p:outputPanel>
+		</ui:define>
+
+		<ui:define name="conteudo">
+			<h:form id="frmCad">
+
+				<p:growl id="growl" life="3000" />
+
+				<h:inputHidden value="#{desbravadorMB.desbravador.id}" id="id" />
+				<p:panel id="toggleable"
+					header="Cadastro do Desbravador Associação Paulistana"
+					toggleable="true" closable="false" toggleSpeed="500"
+					closeSpeed="500" widgetVar="panel">
+					<p:messages autoUpdate="true" />
+
+					<div class="ui-fluid">
+						<h:panelGrid columns="3" id="Desbravador" style="align: center">
+
+							<p:outputLabel for="nome" value="Nome do Desbravador:" />
+							<p:autoComplete id="nome" queryDelay="2000"
+								value="#{desbravadorMB.desbravador.nome}"
+								completeMethod="#{desbravadorMB.complete}" style="width:510px"
+								dropdown="true" required="true" effect="blind" cache="true"
+								cacheTimeout="30000">
+								<p:ajax event="itemSelect"
+									listener="#{desbravadorMB.onItemSelect}" update="frmCad" />
+							</p:autoComplete>
+							<p:message for="nome" />
+
+							<p:outputLabel for="cargo" value="Cargo:" />
+							<p:selectOneMenu id="cargo" disabled="false"
+								value="#{desbravadorMB.desbravador.cargo}" required="false"
+								style="width:210px">
+								<f:selectItem itemLabel="Selecione seu Cargo" itemValue="" />
+								<f:selectItem itemLabel="Capelão(ã)" itemValue="Capelão(ã)" />
+								<f:selectItem itemLabel="Secretário(a)"
+									itemValue="Secretário(a)" />
+								<f:selectItem itemLabel="Capitão(a)" itemValue="Capitão(a)" />
+								<f:selectItem itemLabel="Desbravador" itemValue="Desbravador" />
+								<f:selectItem itemLabel="Conselheiro(a)"
+									itemValue="Conselheiro(a)" />
+								<f:selectItem itemLabel="Vice Conselheiro(a)"
+									itemValue="Vice Conselheiro(a)" />
+								<f:selectItem itemLabel="Instrutor(a)" itemValue="Instrutor(a)" />
+								<f:selectItem itemLabel="Almoxerifado" itemValue="Almoxerifado" />
+								<f:selectItem itemLabel="Tesoureiro(a)"
+									itemValue="Tesoureiro(a)" />
+								<f:selectItem itemLabel="Diretor(a)" itemValue="Diretor(a)" />
+								<f:selectItem itemLabel="Vice Diretor(a)"
+									itemValue="Vice Diretor(a)" />
+								<f:selectItem itemLabel="Distrital" itemValue="Distrital" />
+								<f:selectItem itemLabel="Coordenador" itemValue="Coordenador" />
+								<f:selectItem itemLabel="Regional" itemValue="Regional" />
+								<f:selectItem itemLabel="Departamental"
+									itemValue="Departamental" />
+								<f:selectItem itemLabel="Pastor" itemValue="Pastor" />
+								<f:selectItem itemLabel="Comunicação" itemValue="Comunicação" />
+							</p:selectOneMenu>
+							<p:message for="cargo" />
+
+							<p:outputLabel for="clube" value="Clube de Desbravadores:" />
+							<p:inputText id="clube"
+								value="#{desbravadorMB.desbravador.clube}" required="true"
+								size="50" />
+							<p:message for="clube" />
+
+							<p:outputLabel for="unidade" value="Unidade:" />
+							<p:inputText id="unidade"
+								value="#{desbravadorMB.desbravador.unidade}" required="true"
+								size="50" />
+							<p:message for="unidade" />
+
+							<p:outputLabel for="regiao" value="Regiãoº:" />
+							<p:inputText id="regiao"
+								value="#{desbravadorMB.desbravador.regiao}" required="true"
+								size="50" />
+							<p:message for="regiao" />
+
+							<p:outputLabel for="associacao" value="Associação/Missão:" />
+							<p:selectOneMenu id="associacao" disabled="false"
+								value="#{desbravadorMB.desbravador.associacao}" required="false"
+								style="width:300px">
+								<f:selectItem itemLabel="Selecione sua Associação" itemValue="" />
+								<f:selectItem itemLabel="Associação Paulistana (AP)"
+									itemValue="Associação Paulistana (AP)" />
+								<f:selectItem itemLabel="Associação Paulista Leste (APL)"
+									itemValue="Associação Paulista Leste (APL)" />
+								<f:selectItem itemLabel="Associação Paulista Central (APaC)"
+									itemValue="Associação Paulista Central (APaC)" />
+								<f:selectItem itemLabel="Associação Paulista do Vale (APV)"
+									itemValue="Associação Paulista do Vale (APV)" />
+								<f:selectItem itemLabel="Associação Paulista do Sul (APS)"
+									itemValue="Associação Paulista do Sul (APS)" />
+								<f:selectItem itemLabel="Associação Paulista Sudoeste (APSe)"
+									itemValue="Associação Paulista Sudoeste (APSe)" />
+							</p:selectOneMenu>
+							<p:message for="associacao" />
+
+							<!-- <p:outputLabel for="uniao" value="União:" />
+					<p:inputText id="uniao" value="#{desbravadorMB.desbravador.uniao}"
+						required="true" size="50" />
+					<p:message for="uniao" /> -->
+
+						</h:panelGrid>
+					</div>
+
+					<p:commandButton value="Salvar" id="ajax" validateClient="true"
+						rendered="#{desbravadorMB.desbravador.id == 0}"
+						actionListener="#{desbravadorMB.salvarDesbravador}"
+						icon="fa fa-fw fa-database" styleClass="ui-priority-primary"
+						onclick="dialog.hide()" update="frmCad" />
+
+					<p:commandButton value="Atualizar" id="idAlterar"
+						validateClient="true"
+						actionListener="#{desbravadorMB.alterarDesbravador}"
+						rendered="#{desbravadorMB.desbravador.id != 0}"
+						styleClass="ui-priority-primary" icon="fa fa-fw fa-refresh"
+						update="frmCad" />
+
+					<p:commandButton value="Excluir" id="idExcluir" type="button"
+						rendered="#{desbravadorMB.desbravador.id != 0}"
+						onclick="PF('excluirDialog').show()" icon="ui-icon-trash"
+						update="frmCad" />
+
+					<p:commandButton value="Limpar Cadastro" id="ajax2"
+						rendered="#{desbravadorMB.desbravador.id != 0}"
+						actionListener="#{desbravadorMB.limparFormulario}"
+						validateClient="true" styleClass="ui-priority-primary"
+						icon="fa fa-fw fa-magic" update="frmCad" />
+
+				</p:panel>
+
+			</h:form>
+			<h:form id="frmConsulta">
+			
+				<p:dataTable var="desbravador" id="gridDesbravador"
+					rowKey="#{desbravador.id}" emptyMessage="Registro não Encontrado"
+					resizableColumns="true" value="#{desbravadorMB.listDesbravador}"
+					rows="5" paginator="true"
+					rendered="#{not empty desbravadorMB.listDesbravador}"
+					selection="#{desbravadorMB.selecionadosDesbravador}"
+					currentPageReportTemplate="{startRecord} - {endRecord} de {totalRecords} Registros"
+					paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+					rowsPerPageTemplate="5,10,15,20, 30">
+					<f:facet name="header">
+           				Dados do Desbravador
+       			</f:facet>
+
+					<p:column selectionMode="multiple"
+						style="width:40px; text-align:center">
+					</p:column>
+
+					<p:column headerText="Nome" sortBy="#{desbravador.nome}">
+						<h:outputText value="#{desbravador.nome}" />
+					</p:column>
+
+					<p:column headerText="Clube" sortBy="#{desbravador.clube}">
+						<h:outputText value="#{desbravador.clube}" />
+					</p:column>
+
+					<p:column headerText="Regiãoº" sortBy="#{desbravador.regiao}">
+						<h:outputText value="#{desbravador.regiao}" />
+					</p:column>
+
+					<p:column headerText="Associação"
+						sortBy="#{desbravador.associacao}">
+						<h:outputText value="#{desbravador.associacao}" />
+					</p:column>
+
+					<!-- <p:column headerText="União" sortBy="#{desbravador.uniao}">
+					<h:outputText value="#{desbravador.uniao}" />
+				</p:column> -->
+
+					<f:facet name="footer">
+						<p:commandButton value="Excluir"
+							oncomplete="PF('excluirFromGridDialog').show()" ajax="true"
+							update="frmConsulta" validateClient="true" icon="ui-icon-trash"
+							actionListener="#{desbravadorMB.excluirFromGrid}" />
+					</f:facet>
+
+				</p:dataTable>
+
+				<p:dialog header="Excluir" widgetVar="excluirFromGridDialog"
+					width="580" height="500" modal="true" showEffect="fade"
+					hideEffect="fade" resizable="true">
+					<p:outputPanel id="carDetail2" style="text-align:center;">
+						<br />
+						<p:dataTable id="displayExclusao" var="selecione"
+							value="#{desbravadorMB.selecionadosDesbravador}"
+							emptyMessage="Nenhum Registro Selecionado!">
+							<f:facet name="header">  
+                  						  Desbravador(es) será(am) Excluido(s)! 
+           					 </f:facet>
+
+							<p:column headerText="Código do Desbravador">
+								<h:outputText value="#{selecione.id}" />
+							</p:column>
+							<p:column headerText="Nome">
+								<h:outputText value="#{selecione.nome}" />
+							</p:column>
+							<f:facet name="footer">
+								<p:commandButton value="Fechar" id="idExcluirFechar2"
+									onclick="GerarPropostaDialog.hide()"
+									icon="ui-icon-circle-close" update="frmConsulta" />
+
+								<p:commandButton value="Confirma Exclusão"
+									id="idExcluirDesbravador2" icon=" ui-icon-circle-check"
+									actionListener="#{desbravadorMB.excluirDesbravadorList}"
+									update="frmConsulta,frmCad" />
+							</f:facet>
+						</p:dataTable>
+					</p:outputPanel>
+				</p:dialog>
+
+				<p:dialog header="Excluir Desbravador" widgetVar="excluirDialog"
+					modal="true" showEffect="fade" hideEffect="fade" resizable="true">
+					<p:outputPanel id="carDetail" style="text-align:center;">
+						<p:panelGrid columns="2" columnClasses="label,value">
+
+							<p:commandButton value="Fechar" id="idExcluirFechar"
+								onclick="GerarPropostaDialog.hide()" icon="ui-icon-circle-close"
+								update="frmConsulta" />
+
+							<p:commandButton value="Confirma Exclusão"
+								id="idExcluirDesbravador" icon="ui-icon-circle-check"
+								actionListener="#{desbravadorMB.excluirDesbravador}"
+								update="frmConsulta" />
+
+						</p:panelGrid>
+					</p:outputPanel>
+				</p:dialog>
+			</h:form>
+		</ui:define>
+	</ui:composition>
+</f:view>
+</html>

@@ -1,0 +1,32 @@
+ Fim da Instala√ß√£o! 
+ Fim da Instala√ß√£o! 
+java.lang.Exception: Documento cifrado invalido n„o foi possivel extrair vers„o
+	at com.br.bradesco.autd.biblioteca.GestorAUTD.getVersaoChavesDocumentoCifrado(GestorAUTD.java:218)
+	at br.com.bradesco.connector.autd.service.AUTDService.desempacotar(AUTDService.java:99)
+	at br.com.depacketizer.domain.model.service.UnpackService.unpack(UnpackService.java:36)
+	at br.com.depacketizer.domain.model.service.DepacketizerService.run(DepacketizerService.java:121)
+java.lang.Exception: Documento cifrado invalido n„o foi possivel extrair vers„o
+	at com.br.bradesco.autd.biblioteca.GestorAUTD.getVersaoChavesDocumentoCifrado(GestorAUTD.java:218)
+	at br.com.bradesco.connector.autd.service.AUTDService.desempacotar(AUTDService.java:99)
+	at br.com.depacketizer.domain.model.service.UnpackService.unpack(UnpackService.java:36)
+	at br.com.depacketizer.domain.model.service.DepacketizerService.run(DepacketizerService.java:121)
+java.lang.Exception: Documento cifrado invalido n„o foi possivel extrair vers„o
+	at com.br.bradesco.autd.biblioteca.GestorAUTD.getVersaoChavesDocumentoCifrado(GestorAUTD.java:218)
+	at br.com.bradesco.connector.autd.service.AUTDService.desempacotar(AUTDService.java:99)
+	at br.com.depacketizer.domain.model.service.UnpackService.unpack(UnpackService.java:36)
+	at br.com.depacketizer.domain.model.service.DepacketizerService.run(DepacketizerService.java:121)
+java.lang.Exception: Documento cifrado invalido n„o foi possivel extrair vers„o
+	at com.br.bradesco.autd.biblioteca.GestorAUTD.getVersaoChavesDocumentoCifrado(GestorAUTD.java:218)
+	at br.com.bradesco.connector.autd.service.AUTDService.desempacotar(AUTDService.java:99)
+	at br.com.depacketizer.domain.model.service.UnpackService.unpack(UnpackService.java:36)
+	at br.com.depacketizer.domain.model.service.DepacketizerService.run(DepacketizerService.java:121)
+java.lang.Exception: Documento cifrado invalido n„o foi possivel extrair vers„o
+	at com.br.bradesco.autd.biblioteca.GestorAUTD.getVersaoChavesDocumentoCifrado(GestorAUTD.java:218)
+	at br.com.bradesco.connector.autd.service.AUTDService.desempacotar(AUTDService.java:99)
+	at br.com.depacketizer.domain.model.service.UnpackService.unpack(UnpackService.java:36)
+	at br.com.depacketizer.domain.model.service.DepacketizerService.run(DepacketizerService.java:121)
+ Fim da Instala√ß√£o! 
+ Fim da Instala√ß√£o! 
+ Fim da Instala√ß√£o! 
+ Fim da Instala√ß√£o! 
+ Fim da Instala√ß√£o! 

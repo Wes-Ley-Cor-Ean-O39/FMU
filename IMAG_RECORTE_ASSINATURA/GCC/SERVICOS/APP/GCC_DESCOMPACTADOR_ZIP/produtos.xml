@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<produtos>
+  
+ <produto nome ="ACTA_LEGADO_GCDL01_CRIPTOGRAFADO">
+    <!--opcionais-->
+    <validaExtracao habilitado="true" diretorios="1" />
+    <diretorios criarParaDescompactar="true"/>
+    <enviarConfirmacao habilitado="true" pathAck="C:\ICC_GCC\ACTA_LEGADO\ZIP\CONFIRMACAO"/>
+
+    <pathOrigem path="C:\ICC_GCC\ACTA_LEGADO\ZIP\ORIGEM\" />
+    <pathDestino path="C:\ICC_GCC\ACTA_LEGADO\ZIP\DESTINO\" />
+    <pathRejeitados path="C:\ICC_GCC\ACTA_LEGADO\ZIP\REJEITADOS\" />
+	<ArquivoRetorno path="C:\ICC_GCC\ACTA_LEGADO\ZIP\RETORNO\" />
+    <threads qtde="2" />
+    <backupArquivos habilitado="true" qtdeDiasBackup ="3" pathBkp="C:\ICC_GCC\ACTA_LEGADO\ZIP\BACKUP\" />
+
+    <!--em segundos-->
+    <tempoDescanso tempo="1"/>
+
+    <processarArquivos>
+	 <filtrarTipo extensao="detr"/>
+     <filtrarTipo extensao="zip"/>	 
+    </processarArquivos>
+
+    <ordemExtracao> 
+      <elementoExtracao ordem="1" extensao="tif" />
+      <elementoExtracao ordem="2" extensao="CSV" />
+    </ordemExtracao>
+
+    <apagarArquivos>
+	<apagarItem local="origem" extensao="top"/>
+	<apagarItem local="origem" extensao="TXT"/>
+    </apagarArquivos>
+ </produto>
+
+ <produto nome ="ACTA_LEGADO_GCDL01_CRIPTOGRAFADOKINUM">
+    <!--opcionais-->
+    <validaExtracao habilitado="false" diretorios="1" />
+    <diretorios criarParaDescompactar="false"/>
+    <enviarConfirmacao habilitado="true" pathAck="C:\ICC_GCC\ACTA_LEGADO\ZIP_01\CONFIRMACAO"/>
+
+    <pathOrigem path="C:\ICC_GCC\ACTA_LEGADO\ZIP_01\ORIGEM\" />
+    <pathDestino path="C:\ICC_GCC\ACTA_LEGADO\ZIP_01\DESTINO\" />
+    <pathRejeitados path="C:\ICC_GCC\ACTA_LEGADO\ZIP_01\REJEITADOS\" />
+    <ArquivoRetorno path="" />
+    <threads qtde="2" />
+    <backupArquivos habilitado="true" qtdeDiasBackup ="3" pathBkp="C:\ICC_GCC\ACTA_LEGADO\ZIP_01\BACKUP\" />
+
+    <!--em segundos-->
+    <tempoDescanso tempo="300"/>
+
+    <processarArquivos>
+    <filtrarTipo extensao="detr"/>
+      <filtrarTipo extensao="zip"/>  
+    </processarArquivos>
+
+    <ordemExtracao> 
+      <elementoExtracao ordem="2" extensao="CSV" />
+    </ordemExtracao>
+
+    <apagarArquivos>
+    <apagarItem local="origem" extensao="*"/>
+    </apagarArquivos>
+ </produto>  
+
+ <produto nome ="ACTA_LEGADO_GCDL01_CRIPTOGRAFADO_KINDOIS">
+    <!--opcionais-->
+    <validaExtracao habilitado="true" diretorios="1" />
+    <diretorios criarParaDescompactar="true"/>
+    <enviarConfirmacao habilitado="true" pathAck="C:\ICC_GCC\ACTA_LEGADO\ZIP_02\CONFIRMACAO"/>
+
+    <pathOrigem path="C:\ICC_GCC\ACTA_LEGADO\ZIP_02\ORIGEM\" />
+    <pathDestino path="C:\ICC_GCC\ACTA_LEGADO\ZIP_02\DESTINO\" />
+    <pathRejeitados path="C:\ICC_GCC\ACTA_LEGADO\ZIP_02\REJEITADOS\" />
+    <ArquivoRetorno path="" />
+    <threads qtde="2" />
+    <backupArquivos habilitado="true" qtdeDiasBackup ="3" pathBkp="C:\ICC_GCC\ACTA_LEGADO\ZIP_02\BACKUP\" />
+
+    <!--em segundos-->
+    <tempoDescanso tempo="300"/>
+
+    <processarArquivos>
+    <filtrarTipo extensao="detr"/>
+      <filtrarTipo extensao="zip"/>  
+    </processarArquivos>
+
+    <ordemExtracao> 
+      <elementoExtracao ordem="1" extensao="tif" />
+    </ordemExtracao>
+
+    <apagarArquivos>
+    <apagarItem local="origem" extensao="top"/>
+    </apagarArquivos>
+ </produto>    
+    
+ </produtos>

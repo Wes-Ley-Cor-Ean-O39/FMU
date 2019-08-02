@@ -37,7 +37,15 @@ public class DesbravadorMB {
 	public void salvarDesbravador(ActionEvent actionEvent) {
 		DesbravadorDao desbravadorDao = new DesbravadorDao();
 		desbravadorDao.insertDesbravador(desbravador);
+		desbravador = new Desbravador();
 		addMessage("Desbravador Salvo com Sucesso!");
+	}
+
+	public void alterarDesbravador(ActionEvent actionEvent){
+		DesbravadorDao desbravadorDao = new DesbravadorDao();
+		desbravadorDao.alterarDesbravador(desbravador);
+		desbravador = new Desbravador();
+		addMessage("Desbravador Alterado com Sucesso!");
 	}
 
 	public void excluirDesbravador(ActionEvent actionEvent) {
@@ -62,17 +70,15 @@ public class DesbravadorMB {
 
 	public void onItemSelect(SelectEvent event) {
 		String nomeId = event.getObject().toString();
-		String id = nomeId.substring((nomeId.indexOf("#") + 1), nomeId.length());
+		String id = nomeId
+				.substring((nomeId.indexOf("#") + 1), nomeId.length());
 		DesbravadorDao desbravadorDao = new DesbravadorDao();
 		desbravador = desbravadorDao.buscaDesbravadorById(Integer.parseInt(id));
 	}
 
-	public void limparFormulario(ActionEvent actionEvent) {
-		desbravador = new Desbravador();
-	}
-
 	public void addMessage(String summary) {
-		FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary, null);
+		FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO,
+				summary, null);
 		FacesContext.getCurrentInstance().addMessage(null, message);
 	}
 
@@ -84,7 +90,8 @@ public class DesbravadorMB {
 
 	public void onRowSelectBO(SelectEvent event) {
 		FacesContext ctx = FacesContext.getCurrentInstance();
-		String bean = ctx.getExternalContext().getRequestParameterMap().get("paramMB");
+		String bean = ctx.getExternalContext().getRequestParameterMap()
+				.get("paramMB");
 	}
 
 	public void excluirFromGrid(ActionEvent event) {
@@ -97,6 +104,10 @@ public class DesbravadorMB {
 		desbravadorDao.excluirDesbravadorList(selecionadosDesbravador);
 		consultarAllDesbravador();
 		addMessage("Desbravador(es) Excluído(s) com Sucesso!");
+	}
+
+	public void limparFormulario(ActionEvent actionEvent) {
+		desbravador = new Desbravador();
 	}
 
 	public Desbravador getDesbravador() {
@@ -127,7 +138,8 @@ public class DesbravadorMB {
 		return selectedDesbravadorArray;
 	}
 
-	public void setSelectedDesbravadorArray(Desbravador[] selectedDesbravadorArray) {
+	public void setSelectedDesbravadorArray(
+			Desbravador[] selectedDesbravadorArray) {
 		this.selectedDesbravadorArray = selectedDesbravadorArray;
 	}
 
@@ -135,7 +147,8 @@ public class DesbravadorMB {
 		return selecionadosDesbravador;
 	}
 
-	public void setSelecionadosDesbravador(List<Desbravador> selecionadosDesbravador) {
+	public void setSelecionadosDesbravador(
+			List<Desbravador> selecionadosDesbravador) {
 		this.selecionadosDesbravador = selecionadosDesbravador;
 	}
 

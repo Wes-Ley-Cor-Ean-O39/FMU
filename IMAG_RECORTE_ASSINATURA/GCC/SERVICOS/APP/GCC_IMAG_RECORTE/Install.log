@@ -1,0 +1,88 @@
+ Fim da InstalaÃ§Ã£o! 
+br.com.gcc.imag.exceptions.ConfiguracaoInvalidaException: javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; systemId: file:/C:/GCC/SERVICOS/CONFIG/IMAG/PRODUTO/CTAS_DESMAT.xml; lineNumber: 53; columnNumber: 23; cvc-complex-type.2.4.a: Foi detectado um conteúdo inválido começando com o elemento 'codigoRepositorio'. Era esperado um dos '{codigoServicoRecepcao}'.]
+	at br.com.gcc.imag.util.XmlMarshall.unmarshaller(XmlMarshall.java:146)
+	at br.com.gcc.imag.StartService.main(StartService.java:59)
+Caused by: javax.xml.bind.UnmarshalException
+ - with linked exception:
+[org.xml.sax.SAXParseException; systemId: file:/C:/GCC/SERVICOS/CONFIG/IMAG/PRODUTO/CTAS_DESMAT.xml; lineNumber: 53; columnNumber: 23; cvc-complex-type.2.4.a: Foi detectado um conteúdo inválido começando com o elemento 'codigoRepositorio'. Era esperado um dos '{codigoServicoRecepcao}'.]
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.createUnmarshalException(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.createUnmarshalException(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal0(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.UnmarshallerImpl.unmarshal(Unknown Source)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(Unknown Source)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(Unknown Source)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(Unknown Source)
+	at javax.xml.bind.helpers.AbstractUnmarshallerImpl.unmarshal(Unknown Source)
+	at br.com.gcc.imag.util.XmlMarshall.unmarshaller(XmlMarshall.java:143)
+	... 1 more
+Caused by: org.xml.sax.SAXParseException; systemId: file:/C:/GCC/SERVICOS/CONFIG/IMAG/PRODUTO/CTAS_DESMAT.xml; lineNumber: 53; columnNumber: 23; cvc-complex-type.2.4.a: Foi detectado um conteúdo inválido começando com o elemento 'codigoRepositorio'. Era esperado um dos '{codigoServicoRecepcao}'.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(Unknown Source)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHandlerImpl.startElement(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.ValidatingUnmarshaller.startElement(Unknown Source)
+	at com.sun.xml.internal.bind.v2.runtime.unmarshaller.SAXConnector.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(Unknown Source)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(Unknown Source)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	... 8 more
+br.com.gcc.imag.exceptions.ConfiguracaoInvalidaException: O caminho de recorte: C:\GCC\SERVICOS\PROCESSAMENTO\IMAG\TEMP_RECORTE nao exite!
+	at br.com.gcc.imag.produto.modelo.ProdutoModelo.criarTarefa(ProdutoModelo.java:39)
+	at br.com.gcc.imag.StartService.main(StartService.java:60)
+br.com.gcc.imag.exceptions.ConfiguracaoInvalidaException: O caminho de recorte: C:\GCC\SERVICOS\PROCESSAMENTO\IMAG\TEMP_RECORTE nao exite!
+	at br.com.gcc.imag.produto.modelo.ProdutoModelo.criarTarefa(ProdutoModelo.java:39)
+	at br.com.gcc.imag.StartService.main(StartService.java:60)
+ Fim da InstalaÃ§Ã£o! 
+br.com.gcc.imag.exceptions.ConfiguracaoInvalidaException: O caminho de recorte: C:\GCC\SERVICOS\PROCESSAMENTO\IMAG\TEMP_RECORTE nao exite!
+	at br.com.gcc.imag.produto.modelo.ProdutoModelo.criarTarefa(ProdutoModelo.java:39)
+	at br.com.gcc.imag.StartService.main(StartService.java:60)
+ Fim da InstalaÃ§Ã£o! 
+Exception in thread "Thread-1" java.lang.NoClassDefFoundError: Could not initialize class br.com.gcc.imag.compactadores.ebcdig.util.CriptUtil
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.logging.log4j.core.util.Loader.initializeClass(Loader.java:285)
+	at org.apache.logging.log4j.core.impl.ThrowableProxy.loadClass(ThrowableProxy.java:500)
+	at org.apache.logging.log4j.core.impl.ThrowableProxy.toExtendedStackTrace(ThrowableProxy.java:621)
+	at org.apache.logging.log4j.core.impl.ThrowableProxy.<init>(ThrowableProxy.java:146)
+	at org.apache.logging.log4j.core.impl.Log4jLogEvent.getThrownProxy(Log4jLogEvent.java:323)
+	at org.apache.logging.log4j.core.pattern.ExtendedThrowablePatternConverter.format(ExtendedThrowablePatternConverter.java:64)
+	at org.apache.logging.log4j.core.pattern.PatternFormatter.format(PatternFormatter.java:36)
+	at org.apache.logging.log4j.core.layout.PatternLayout.toSerializable(PatternLayout.java:189)
+	at org.apache.logging.log4j.core.layout.PatternLayout.toSerializable(PatternLayout.java:53)
+	at br.com.gcc.imag.infra.ImagManager.write(ImagManager.java:23)
+	at br.com.gcc.imag.infra.ImagAppender.writeLog(ImagAppender.java:109)
+	at br.com.gcc.imag.infra.ImagAppender.append(ImagAppender.java:79)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:97)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:428)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:407)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:365)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:112)
+	at org.apache.logging.log4j.spi.AbstractLogger.logMessage(AbstractLogger.java:1336)
+	at org.apache.logging.log4j.spi.AbstractLogger.logIfEnabled(AbstractLogger.java:1325)
+	at org.apache.logging.log4j.spi.AbstractLogger.fatal(AbstractLogger.java:751)
+	at br.com.gcc.imag.paralelismo.ExecutorTarefa.run(ExecutorTarefa.java:28)
+ Fim da InstalaÃ§Ã£o! 
+ Fim da InstalaÃ§Ã£o! 
+ Fim da InstalaÃ§Ã£o! 
+br.com.gcc.imag.exceptions.ConfiguracaoInvalidaException: O caminho do diretorio de descompactacao: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMP nao e um diretorio valido.
+	at br.com.gcc.imag.produto.modelo.ConfiguracaoModelo.obterConfiguracao(ConfiguracaoModelo.java:56)
+	at br.com.gcc.imag.produto.modelo.ProdutoModelo.criarTarefa(ProdutoModelo.java:29)
+	at br.com.gcc.imag.StartService.main(StartService.java:60)
+ Fim da InstalaÃ§Ã£o! 
+ Fim da InstalaÃ§Ã£o! 

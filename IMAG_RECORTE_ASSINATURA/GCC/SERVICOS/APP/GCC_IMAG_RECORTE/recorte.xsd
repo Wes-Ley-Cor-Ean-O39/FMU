@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.wvs.com.br/recorte" elementFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.wvs.com.br/recorte">
+
+    <element name="recorte" type="tns:recorete"></element>
+
+    <complexType name="recorete">
+    	<sequence>
+    		<element name="documentos" type="tns:documentos"
+    			minOccurs="0" maxOccurs="1">
+    		</element>
+    		<element name="documentosAtic" type="tns:documentosAtic" minOccurs="0" maxOccurs="1"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="documentoAtic">
+    	<sequence>
+    		<element name="area" type="tns:area" minOccurs="1"
+    			maxOccurs="1">
+    		</element>
+    	</sequence>
+    	
+    	<attribute name="nome" use="required">
+    		<simpleType>
+    			<restriction base="string">
+    				<minLength value="1"></minLength>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    </complexType>
+
+    <complexType name="documento">
+    	<sequence>
+    		<element name="area" type="tns:area"></element>
+    	</sequence>
+    	
+    	<attribute name="largura" use="required">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	
+    	<attribute name="altura" use="required">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	
+    	<attribute name="rangeDeCorte">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    </complexType>
+
+    <complexType name="documentos">
+        <sequence minOccurs="1" maxOccurs="unbounded">
+            <element name="documento" type="tns:documento" minOccurs="1"
+        		maxOccurs="unbounded">
+        	</element>
+        </sequence>
+    </complexType>
+
+    <complexType name="area">
+    	<sequence></sequence>
+    	
+    	<attribute name="altura" use="required">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	
+    	<attribute name="posicaoX" use="required">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	
+    	<attribute name="largura" use="required">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	
+    	<attribute name="posicaoY" use="required">
+    		<simpleType>
+    			<restriction base="int">
+    				<minInclusive value="0"></minInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	
+    	<attribute name="orientacao" use="required">
+    		<simpleType>
+    			<restriction base="string">
+    				<enumeration value="RETRATO"></enumeration>
+    				<enumeration value="PAISAGEM"></enumeration>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    </complexType>
+
+    <complexType name="documentosAtic">
+    	<sequence>
+    		<element name="documentoAtic" type="tns:documentoAtic" minOccurs="1" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+</schema>

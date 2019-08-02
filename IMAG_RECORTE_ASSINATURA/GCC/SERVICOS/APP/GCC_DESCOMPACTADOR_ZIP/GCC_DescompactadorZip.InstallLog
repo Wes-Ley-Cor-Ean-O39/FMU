@@ -1,0 +1,39 @@
+﻿Installing assembly 'C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.InstallLog
+   assemblypath = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe
+Installing service GCC_DescompactadorZip...
+Service GCC_DescompactadorZip has been successfully installed.
+Creating EventLog source GCC_DescompactadorZip in log Application...
+Committing assembly 'C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.InstallLog
+   assemblypath = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe
+Installing assembly 'C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.InstallLog
+   assemblypath = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe
+Installing service GCC_DescompactadorZip...
+Service GCC_DescompactadorZip has been successfully installed.
+Creating EventLog source GCC_DescompactadorZip in log Application...
+Committing assembly 'C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.InstallLog
+   assemblypath = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe
+Installing assembly 'C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.InstallLog
+   assemblypath = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe
+Installing service GCC_DescompactadorZip...
+Service GCC_DescompactadorZip has been successfully installed.
+Creating EventLog source GCC_DescompactadorZip in log Application...
+Committing assembly 'C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.InstallLog
+   assemblypath = C:\GCC\SERVICOS\APP\GCC_DESCOMPACTADOR_ZIP\GCC_DescompactadorZip.exe

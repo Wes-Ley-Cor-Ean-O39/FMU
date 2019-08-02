@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='ISO-8859-1'?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
@@ -6,13 +6,16 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
-<f:view contentType="text/html">
+<f:view contentType="text/html; charset=ISO-8859-1">
 	<h:head>
+		<title>Cadastro Fornecedor</title>
+		<link rel="shortcut icon" type="image/x-icon"
+			href="#{request.contextPath}/images/fornecedor.ico" />
 	</h:head>
 	<h:body>
-		<ui:include src="/Menu.xhtml"></ui:include>
+		<ui:include src="/menu.xhtml"></ui:include>
 
-		<h:form id="frmCad">
+		<h:form id="frmCad" acceptcharset="ISO-8859-1">
 
 			<p:growl id="growl" life="3000" />
 
@@ -25,7 +28,7 @@
 
 				<h:panelGrid columns="3" id="Fornecedor" style="align: center">
 
-					<p:outputLabel for="razaoSocial" value="Raz√£o Social:" />
+					<p:outputLabel for="razaoSocial" value="Raz„o Social:" />
 					<p:autoComplete id="razaoSocial" queryDelay="2000"
 						value="#{fornecedorMB.fornecedor.razaoSocial}"
 						completeMethod="#{fornecedorMB.complete}" size="50"
@@ -63,14 +66,8 @@
 					<p:message for="bairro" />
 
 					<p:outputLabel for="estado" value="Estado:" />
-					<p:selectOneMenu id="estado"
-						value="#{fornecedorMB.fornecedor.estado}" required="true"
-						style="width:155px">
-						<f:selectItem itemLabel="Selecione Estado" itemValue="" />
-						<f:selectItem itemLabel="S√£o Paulo" itemValue="SP" />
-						<f:selectItem itemLabel="Rio de Janeiro" itemValue="RJ" />
-						<f:selectItem itemLabel="Bahia" itemValue="BA" />
-					</p:selectOneMenu>
+					<p:inputMask id="estado" value="#{fornecedorMB.fornecedor.estado}"
+						required="true" size="50" disabled="true" />
 					<p:message for="estado" />
 
 					<p:outputLabel for="cnpjCpf" value="CNPJ:" />
@@ -116,7 +113,7 @@
 		</h:form>
 		<h:form id="frmConsulta">
 			<p:dataTable var="fornecedor" id="gridFornecedor" lazy="true"
-				rowKey="#{fornecedor.id}" emptyMessage="Registro n√£o Encontrado"
+				rowKey="#{fornecedor.id}" emptyMessage="Registro n„o Encontrado"
 				resizableColumns="true" value="#{fornecedorMB.listFornecedor}"
 				rows="5" paginator="true"
 				selection="#{fornecedorMB.selecionadosFornecedor}"
@@ -130,12 +127,12 @@
 					style="width:40px; text-align:center">
 				</p:column>
 
-				<p:column headerText="C√≥digo de Fornecedor"
+				<p:column headerText="CÛdigo de Fornecedor"
 					sortBy="#{fornecedor.id}">
 					<h:outputText value="#{fornecedor.id}" />
 				</p:column>
 
-				<p:column headerText="Raz√£o Social"
+				<p:column headerText="Raz„o Social"
 					sortBy="#{fornecedor.razaoSocial}">
 					<h:outputText value="#{fornecedor.razaoSocial}" />
 				</p:column>
@@ -157,10 +154,10 @@
 					<p:dataTable id="displayExclusao" var="selecione"
 						value="#{fornecedorMB.selecionadosFornecedor}">
 						<f:facet name="header">  
-                  						  Fornecedor(es) ser√°(am) Excluido(s)! 
+                  						  Fornecedor(es) ser·(am) Excluido(s)! 
            					 </f:facet>
 
-						<p:column headerText="C√≥digo do Fornecedor">
+						<p:column headerText="CÛdigo do Fornecedor">
 							<h:outputText value="#{selecione.id}" />
 						</p:column>
 						<p:column headerText="Nome do Fornecedor">
@@ -170,7 +167,7 @@
 							<p:commandButton value="Fechar" id="idExcluirFechar2"
 								onclick="GerarPropostaDialog.hide()" update="frmConsulta" />
 
-							<p:commandButton value="Confirma Exclus√£o"
+							<p:commandButton value="Confirma Exclus„o"
 								id="idExcluirFornecedor2" icon="ui-icon-close"
 								actionListener="#{fornecedorMB.excluirFornecedorList}"
 								update="frmConsulta,frmCad" />
@@ -187,7 +184,7 @@
 						<p:commandButton value="Fechar" id="idExcluirFechar"
 							onclick="GerarPropostaDialog.hide()" update="frmConsulta" />
 
-						<p:commandButton value="Confirma Exclus√£o"
+						<p:commandButton value="Confirma Exclus„o"
 							id="idExcluirFornecedor" icon="ui-icon-close"
 							actionListener="#{fornecedorMB.excluirFornecedor}"
 							update="frmConsulta" />

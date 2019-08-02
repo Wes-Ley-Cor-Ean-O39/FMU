@@ -8,16 +8,22 @@
 	xmlns:p="http://primefaces.org/ui">
 <f:view contentType="text/html">
 	<h:head>
+
+		<title>Cadastro DBV</title>
+		<link rel="shortcut icon" type="image/x-icon"
+			href="#{request.contextPath}/images/dbv.ico" />
+
 	</h:head>
 	<h:body>
-		<ui:include src="/Menu.xhtml"></ui:include>
+		<!-- <ui:include src="/Menu.xhtml"></ui:include> -->
 
 		<h:form id="frmCad">
 
 			<p:growl id="growl" life="3000" />
 
 			<h:inputHidden value="#{desbravadorMB.desbravador.id}" id="id" />
-			<p:panel id="toggleable" header="Cadastro do Desbravador"
+			<p:panel id="toggleable"
+				header="Cadastro do Desbravador Associação Paulistana"
 				toggleable="true" closable="true" toggleSpeed="500" closeSpeed="500"
 				widgetVar="panel">
 				<p:messages autoUpdate="true" />
@@ -38,7 +44,7 @@
 					<p:outputLabel for="cargo" value="Cargo:" />
 					<p:selectOneMenu id="cargo" disabled="false"
 						value="#{desbravadorMB.desbravador.cargo}" required="true"
-						style="width:155px">
+						style="width:165px">
 						<f:selectItem itemLabel="Selecione seu Cargo" itemValue="" />
 						<f:selectItem itemLabel="Capelão(ã)" itemValue="Capelão(ã)" />
 						<f:selectItem itemLabel="Secretário(a)" itemValue="Secretário(a)" />
@@ -68,17 +74,35 @@
 						required="true" size="50" />
 					<p:message for="clube" />
 
+					<p:outputLabel for="unidade" value="Unidade:" />
+					<p:inputText id="unidade" value="#{desbravadorMB.desbravador.unidade}"
+						required="true" size="50" />
+					<p:message for="unidade" /> 
+
 					<p:outputLabel for="regiao" value="Regiãoº:" />
 					<p:inputText id="regiao"
 						value="#{desbravadorMB.desbravador.regiao}" required="true"
 						size="50" />
 					<p:message for="regiao" />
 
-
 					<p:outputLabel for="associacao" value="Associação/Missão:" />
-					<p:inputText id="associacao"
+					<p:selectOneMenu id="associacao" disabled="false"
 						value="#{desbravadorMB.desbravador.associacao}" required="true"
-						size="50" />
+						style="width:300px">
+						<f:selectItem itemLabel="Selecione sua Associação" itemValue="" />
+						<f:selectItem itemLabel="Associação Paulistana (AP)"
+							itemValue="Associação Paulistana (AP)" />
+						<f:selectItem itemLabel="Associação Paulista Leste (APL)"
+							itemValue="Associação Paulista Leste (APL)" />
+						<f:selectItem itemLabel="Associação Paulista Central (APaC)"
+							itemValue="Associação Paulista Central (APaC)" />
+						<f:selectItem itemLabel="Associação Paulista do Vale (APV)"
+							itemValue="Associação Paulista do Vale (APV)" />
+						<f:selectItem itemLabel="Associação Paulista do Sul (APS)"
+							itemValue="Associação Paulista do Sul (APS)" />
+						<f:selectItem itemLabel="Associação Paulista Sudoeste (APSe)"
+							itemValue="Associação Paulista Sudoeste (APSe)" />
+					</p:selectOneMenu>
 					<p:message for="associacao" />
 
 					<!-- <p:outputLabel for="uniao" value="União:" />
@@ -91,18 +115,17 @@
 				<p:commandButton value="Salvar" id="ajax" validateClient="true"
 					actionListener="#{desbravadorMB.salvarDesbravador}"
 					icon=" ui-icon-circle-check" styleClass="ui-priority-primary"
-					update="frmCad" />
-
+					onclick="dialog.hide()" update="frmCad" />
 
 				<p:commandButton value="Excluir" id="idExcluir" type="button"
 					rendered="#{desbravadorMB.desbravador.id != 0}"
 					onclick="PF('excluirDialog').show()" icon="ui-icon-trash"
 					update="frmCad" />
 
-				<p:commandButton value="Limpar Cadastro" id="ajax2" type="reset"
+				<p:commandButton value="Limpar Cadastro" id="ajax2"
 					actionListener="#{desbravadorMB.limparFormulario}"
-					styleClass="ui-priority-primary" icon=" ui-icon-cancel"
-					update="frmCad" />
+					validateClient="true" styleClass="ui-priority-primary"
+					icon=" ui-icon-cancel" update="frmCad" />
 
 			</p:panel>
 
@@ -143,6 +166,7 @@
 				<!-- <p:column headerText="União" sortBy="#{desbravador.uniao}">
 					<h:outputText value="#{desbravador.uniao}" />
 				</p:column> -->
+
 				<f:facet name="footer">
 					<p:commandButton value="Excluir"
 						oncomplete="PF('excluirFromGridDialog').show()" ajax="true"

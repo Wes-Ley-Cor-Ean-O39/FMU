@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appenders>
+    <DepacketizerAppender name="Default" folder="C:\ICC_GCC\DESEMPACOTADOR\GCC_Logs\" size="100 MB">
+      <PatternLayout>
+        <pattern>%d{dd/MM/yyyy HH:mm:ss} %-5p [%-10thread] %-50logger{1} %-30method - %message%n</pattern>
+      </PatternLayout>
+      <DefaultRolloverStrategy max="10" fileIndex="min"/>
+    </DepacketizerAppender>
+  </appenders>
+
+  <loggers>
+    <root level="Trace"> 
+      <AppenderRef ref="Default" />
+    </root>
+  </loggers>
+</configuration>

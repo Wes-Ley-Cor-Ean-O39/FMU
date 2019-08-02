@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.wvs.com.br/imag" elementFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.wvs.com.br/imag">
+
+    <complexType name="produto">
+    	<sequence>
+    		<element name="configuracao" type="tns:configuracao" minOccurs="1" maxOccurs="1"></element>
+    		<choice minOccurs="1" maxOccurs="1">
+    			<element name="posicaoCsvGccd" type="tns:posicaoCsvGccd" minOccurs="1" maxOccurs="1"></element>
+    			<element name="posicaoCsvAthic" type="tns:posicaoCsvAthic" maxOccurs="1" minOccurs="1"></element>
+    		</choice>
+    		<choice minOccurs="0" maxOccurs="1">
+	    		<element name="rastreabilidade" type="tns:rastreabilidade" minOccurs="0" maxOccurs="1"></element>
+    		</choice>
+    	</sequence>
+    </complexType>
+
+    <complexType name="configuracao">
+    	<sequence>
+    	
+            <element name="capacidadeMaximaEBCDIC" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="1"></minInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+            <element name="prefixoCartaoAssinatura" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="1"></minLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+            <element name="caminhoOrigem" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="1"></minLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="caminhoDestino" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="1"></minLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="criarArquivoTopDestino" type="boolean" maxOccurs="1" minOccurs="1"></element>
+    		
+    		<element name="caminhoRejeitado" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="1"></minLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="caminhoSaidaEbcdic" maxOccurs="1" minOccurs="1">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="1"></minLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="sleep" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="1"></minInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="tempRastreabilidade" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="1"></minLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="caminhoRejeitadosRastreabilidade" maxOccurs="1" minOccurs="0">
+    			<simpleType>
+    				<restriction base="string">
+    					<minLength value="1"></minLength>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="descompactarTemp" maxOccurs="1" minOccurs="0">
+	    		<simpleType>
+	    				<restriction base="string">
+	    					<minLength value="1"></minLength>
+	    				</restriction>
+	    		</simpleType>
+    		</element>
+    		
+    	</sequence>
+    </complexType>
+
+    <complexType name="posicaoCsv">
+    	
+    	<sequence>
+    		
+    		<element name="nomeDoArquivo" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="agencia" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="conta" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="tipoDaConta" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    		<element name="cpf" minOccurs="1" maxOccurs="1">
+    			<simpleType>
+    				<restriction base="int">
+    					<minInclusive value="0"></minInclusive>
+    				</restriction>
+    			</simpleType>
+    		</element>
+    		
+    	</sequence>
+    	
+    </complexType>
+
+    <element name="produto" type="tns:produto"></element>
+
+    <complexType name="posicaoCsvAthic">
+    
+    	<complexContent>
+    		<extension base="tns:posicaoCsv">
+    			<sequence>
+    				<element name="nomeDocumento" type="int"
+    					maxOccurs="1" minOccurs="1" nillable="false">
+    				</element>
+    			</sequence>
+    			<attribute name="origem" type="int" use="required" fixed="3"></attribute>
+    		</extension>
+    	</complexContent>
+    	
+    </complexType>
+    
+
+    <complexType name="posicaoCsvGccd">
+    
+    	<complexContent>
+    		<extension base="tns:posicaoCsv">
+    			<attribute name="origem" type="int" use="required" fixed="2"></attribute>
+    		</extension>
+    	</complexContent>
+    	
+    </complexType>
+  
+    <complexType name="rastreabilidade">
+    
+    	<sequence>
+    	
+    		<element name="niur" minOccurs="0" maxOccurs="1" />
+    		<element name="niurPrincipal" minOccurs="0" maxOccurs="1" />
+    		<element name="hashImagem" minOccurs="0" maxOccurs="1" />
+    		<element name="codigoFluxoArmazenamento" minOccurs="0" maxOccurs="1" />
+    		<element name="numeroProcesso" minOccurs="0" maxOccurs="1" />
+    		<element name="bancoCaptura" minOccurs="0" maxOccurs="1" />
+    		<element name="bancoProcessamento" minOccurs="0" maxOccurs="1" />
+    		<element name="banco" minOccurs="0" maxOccurs="1" />
+    		<element name="agenciaCaptura" minOccurs="0" maxOccurs="1" />
+    		<element name="agenciaProcessamento" minOccurs="0" maxOccurs="1" />
+    		<element name="agencia" minOccurs="0" maxOccurs="1" />
+    		<element name="conta" minOccurs="0" maxOccurs="1" />
+    		<element name="cpfCnpj" minOccurs="0" maxOccurs="1" />
+    		<element name="filialCnpj" minOccurs="0" maxOccurs="1" />
+    		<element name="controleCpfCnpj" minOccurs="0" maxOccurs="1" />
+    		<element name="icorPessoa" minOccurs="0" maxOccurs="1" />
+    		<element name="cmc7" minOccurs="0" maxOccurs="1" />
+    		<element name="situacaoIntegridade" minOccurs="0" maxOccurs="1" />	
+    		<element name="situacaoProcessamento" minOccurs="0" maxOccurs="1" />		
+    		<element name="situacaoDocumento" minOccurs="0" maxOccurs="1" />		
+    		<element name="mimeType" minOccurs="0" maxOccurs="1" />		
+    		<element name="nomeArquivo" minOccurs="0" maxOccurs="1" />			
+    		<element name="codigoDocumento" minOccurs="0" maxOccurs="1" />	
+    		<element name="codigoServicoRecepcao" minOccurs="0" maxOccurs="1" />
+    		
+    	</sequence>
+    	
+    	<attribute name="gerar" type="boolean" ></attribute>
+    	<attribute name="moverRastreabilidade" type="boolean" ></attribute>
+    	<attribute name="trigger" type="boolean" ></attribute>
+    	<attribute name="validarIntegridade" type="boolean" ></attribute>
+    	
+    </complexType>
+    
+</schema>

@@ -1,0 +1,417 @@
+22/04/2019 16:20:55 DEBUG [Thread-1  ] ExecutorTarefa                                     run                            - Iniciando produto: CTAS_DESMAT .
+22/04/2019 16:20:56 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:20:56 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:20:56 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:20:56 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:20:56 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:21:56 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:21:57 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 21 lotes com cartao de assinatura.
+22/04/2019 16:21:57 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:21:57 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:21:57 INFO  [Thread-1  ] Configuracao                                       deletaArquivosTemp             - Deletando arquivos temporarios!
+22/04/2019 16:21:58 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (10).zip .
+22/04/2019 16:21:58 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:21:58 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:09 DEBUG [Thread-1  ] CriptUtil                                          load                           - DLL nao carregada, iniciar Load.
+22/04/2019 16:22:10 DEBUG [Thread-1  ] CriptUtil                                          load                           - DLL carregada!
+22/04/2019 16:22:10 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (10)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:10 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:11 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:11 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (10).zip foi processado
+22/04/2019 16:22:11 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:11 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162211742.txt
+22/04/2019 16:22:11 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:11 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:11 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:13 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (11).zip .
+22/04/2019 16:22:13 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:13 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:14 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (11)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:14 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:15 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:15 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (11).zip foi processado
+22/04/2019 16:22:15 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:15 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162215464.txt
+22/04/2019 16:22:15 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:15 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:15 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:17 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (12).zip .
+22/04/2019 16:22:17 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:17 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:18 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (12)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:18 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:18 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:18 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (12).zip foi processado
+22/04/2019 16:22:18 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:18 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162218691.txt
+22/04/2019 16:22:18 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:18 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:18 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:20 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (13).zip .
+22/04/2019 16:22:20 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:20 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:20 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (13)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:20 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:21 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:21 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (13).zip foi processado
+22/04/2019 16:22:21 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:21 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162221206.txt
+22/04/2019 16:22:21 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:21 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:21 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:22 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (14).zip .
+22/04/2019 16:22:22 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:22 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:23 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (14)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:23 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:23 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:23 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (14).zip foi processado
+22/04/2019 16:22:23 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:23 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162223872.txt
+22/04/2019 16:22:23 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:23 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:23 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:25 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (15).zip .
+22/04/2019 16:22:25 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:26 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:27 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (15)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:27 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:27 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:27 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (15).zip foi processado
+22/04/2019 16:22:27 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:27 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162227886.txt
+22/04/2019 16:22:27 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:27 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:27 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:30 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (16).zip .
+22/04/2019 16:22:30 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:30 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:31 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (16)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:31 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:32 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:32 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (16).zip foi processado
+22/04/2019 16:22:32 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:32 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162232333.txt
+22/04/2019 16:22:32 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:32 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:32 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:33 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (17).zip .
+22/04/2019 16:22:33 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:34 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:34 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (17)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:34 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:35 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:35 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (17).zip foi processado
+22/04/2019 16:22:35 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:35 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162235781.txt
+22/04/2019 16:22:35 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:35 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:35 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:37 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (18).zip .
+22/04/2019 16:22:37 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:37 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:38 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (18)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:38 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:38 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:38 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (18).zip foi processado
+22/04/2019 16:22:38 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:38 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162238690.txt
+22/04/2019 16:22:38 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:38 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:38 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:40 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (19).zip .
+22/04/2019 16:22:40 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:40 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:41 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (19)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:41 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:41 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:41 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (19).zip foi processado
+22/04/2019 16:22:41 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:41 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162241727.txt
+22/04/2019 16:22:41 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:41 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:41 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:42 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (2).zip .
+22/04/2019 16:22:42 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:42 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:43 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (2)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:43 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:43 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:43 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (2).zip foi processado
+22/04/2019 16:22:43 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:43 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162243784.txt
+22/04/2019 16:22:43 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:43 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:43 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:44 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (20).zip .
+22/04/2019 16:22:44 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:44 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:45 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (20)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:45 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:45 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:45 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (20).zip foi processado
+22/04/2019 16:22:45 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:45 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162245747.txt
+22/04/2019 16:22:45 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:45 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:45 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:47 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (3).zip .
+22/04/2019 16:22:47 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:47 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:47 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (3)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:47 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:48 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:48 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (3).zip foi processado
+22/04/2019 16:22:48 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:48 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162248196.txt
+22/04/2019 16:22:48 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:48 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:48 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:49 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (4).zip .
+22/04/2019 16:22:49 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:49 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:50 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (4)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:50 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:50 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:50 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (4).zip foi processado
+22/04/2019 16:22:50 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:50 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162250765.txt
+22/04/2019 16:22:50 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:50 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:50 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:52 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (5).zip .
+22/04/2019 16:22:52 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:52 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:52 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (5)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:52 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:53 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:53 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (5).zip foi processado
+22/04/2019 16:22:53 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:53 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162253234.txt
+22/04/2019 16:22:53 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:53 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:53 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:54 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (6).zip .
+22/04/2019 16:22:54 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:54 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:55 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (6)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:55 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:55 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:55 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (6).zip foi processado
+22/04/2019 16:22:55 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:55 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162255461.txt
+22/04/2019 16:22:55 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:55 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:55 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:57 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (7).zip .
+22/04/2019 16:22:57 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:57 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:22:58 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (7)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:22:58 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:22:58 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:22:58 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (7).zip foi processado
+22/04/2019 16:22:58 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:22:58 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162258431.txt
+22/04/2019 16:22:58 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:22:58 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:22:58 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:22:59 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (8).zip .
+22/04/2019 16:22:59 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:22:59 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:23:00 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (8)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:23:00 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:23:00 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:23:00 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (8).zip foi processado
+22/04/2019 16:23:00 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:23:00 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162300551.txt
+22/04/2019 16:23:00 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:23:00 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:23:00 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:23:01 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (9).zip .
+22/04/2019 16:23:01 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:23:01 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:23:02 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (9)\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:23:02 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:23:02 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:23:02 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia (9).zip foi processado
+22/04/2019 16:23:02 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:23:02 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162302596.txt
+22/04/2019 16:23:02 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:23:02 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:23:02 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:23:04 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia.zip .
+22/04/2019 16:23:04 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:23:04 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:23:04 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:23:04 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:23:04 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:23:04 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01 - Copia.zip foi processado
+22/04/2019 16:23:04 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:23:04 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162304987.txt
+22/04/2019 16:23:04 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:23:04 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:23:05 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - Processando zip: ACTA06CONTDES_0115-000-E070_2019031314483800803_01.zip .
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - Criando arquivo RAST.
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - 2 csvs de assinatura encontrado(s) iniciando inclusao no EBCDIC.
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - Cartao do csv: C:\ICC_GCC\ACTAS_DESMAT\IMAG\TEMPORARIO\ACTA06CONTDES_0115-000-E070_2019031314483800803_01\C_ACTA06CONTDES_M_97_0115-000-E070_2019031314483800801_01.CSV inserido com sucesso!
+22/04/2019 16:23:06 DEBUG [Thread-1  ] Produto                                            executar                       - Rastreabilidade no servico imag igual: true .
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - Arquivo RAST criado com sucesso!
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - Aquivo ACTA06CONTDES_0115-000-E070_2019031314483800803_01.zip foi processado
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - Finalizando EBCDIC.
+22/04/2019 16:23:06 INFO  [Thread-1  ] Configuracao                                       salvarEbcdic                   - Criando o arquivo IMAG_CTAS_DESMAT_22042019_162306952.txt
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - EBCDIC Criado com sucesso!
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - Movendo Zip para pasta de destino.
+22/04/2019 16:23:06 INFO  [Thread-1  ] Produto                                            executar                       - Zip movido com sucesso!
+22/04/2019 16:23:06 INFO  [Thread-1  ] Configuracao                                       deletaArquivosTemp             - Deletando arquivos temporarios!
+22/04/2019 16:23:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha zip(s)! Aguardando...
+22/04/2019 16:24:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:24:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:24:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:24:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:24:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:25:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:25:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:25:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:25:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:25:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:26:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:26:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:26:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:26:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:26:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:27:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:27:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:27:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:27:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:27:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:28:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:28:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:28:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:28:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:28:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:29:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:29:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:29:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:29:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:29:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:30:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:30:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:30:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:30:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:30:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:31:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:31:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:31:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:31:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:31:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:32:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:32:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:32:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:32:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:32:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:33:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:33:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:33:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:33:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:33:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:34:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:34:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:34:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:34:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:34:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:35:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:35:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:35:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:35:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:35:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:36:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:36:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:36:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:36:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:36:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:37:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:37:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:37:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:37:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:37:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:38:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:38:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:38:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:38:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:38:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:39:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:39:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:39:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:39:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:39:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:40:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:40:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:40:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:40:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:40:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:41:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:41:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:41:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:41:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:41:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:42:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:42:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:42:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:42:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:42:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:43:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:43:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:43:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:43:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:43:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:44:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:44:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:44:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:44:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:44:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:45:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:45:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:45:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:45:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:45:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:46:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:46:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:46:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:46:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:46:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:47:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:47:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:47:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:47:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:47:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:48:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:48:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:48:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:48:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:48:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:49:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:49:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:49:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:49:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:49:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:50:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:50:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:50:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:50:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:50:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:51:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:51:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:51:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:51:08 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:51:08 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:52:08 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:52:09 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:52:09 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:52:09 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:52:09 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
+22/04/2019 16:53:09 INFO  [Thread-1  ] Produto                                            executar                       - Filtrando lotes
+22/04/2019 16:53:09 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com cartao de assinatura.
+22/04/2019 16:53:09 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes sem cartao de assinatura.
+22/04/2019 16:53:09 INFO  [Thread-1  ] Produto                                            executar                       - Encontrados: 0 lotes com problema de leitura.
+22/04/2019 16:53:09 INFO  [Thread-1  ] Produto                                            executar                       - Nao ha lote(s)! Aguardando...
