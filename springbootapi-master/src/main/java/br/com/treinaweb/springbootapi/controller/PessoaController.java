@@ -14,10 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
-
 import br.com.treinaweb.springbootapi.entity.Pessoa;
 import br.com.treinaweb.springbootapi.repository.PessoaRepository;
 
@@ -27,12 +23,6 @@ public class PessoaController {
     @Autowired
     private PessoaRepository _pessoaRepository;
 
-    @ApiOperation(value = "Retorna uma lista de pessoas")
-    @ApiResponses(value = {
-        @ApiResponse(code = 200, message = "Retorna a lista de pessoa"),
-        @ApiResponse(code = 403, message = "Você não tem permissão para acessar este recurso"),
-        @ApiResponse(code = 500, message = "Foi gerada uma exceção"),
-    })
     @RequestMapping(value = "/pessoa", method = RequestMethod.GET, produces="application/json")
     public List<Pessoa> Get() {
         return _pessoaRepository.findAll();
