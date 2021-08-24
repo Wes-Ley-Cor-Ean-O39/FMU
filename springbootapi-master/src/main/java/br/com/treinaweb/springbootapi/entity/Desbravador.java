@@ -5,12 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import lombok.Getter;
-import lombok.Setter;
-
 @Entity
-@Setter
-@Getter
 public class Desbravador {
 
 	@Id
@@ -30,5 +25,69 @@ public class Desbravador {
 	private String uniao;
 
 	private String unidade;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getCargo() {
+		return cargo;
+	}
+
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+
+	public String getClube() {
+		return clube;
+	}
+
+	public void setClube(String clube) {
+		this.clube = clube;
+	}
+
+	public String getRegiao() {
+		return regiao;
+	}
+
+	public void setRegiao(String regiao) {
+		this.regiao = regiao;
+	}
+
+	public String getAssociacao() {
+		return associacao;
+	}
+
+	public void setAssociacao(String associacao) {
+		this.associacao = associacao;
+	}
+
+	public String getUniao() {
+		return uniao;
+	}
+
+	public void setUniao(String uniao) {
+		this.uniao = uniao;
+	}
+
+	public String getUnidade() {
+		return unidade;
+	}
+
+	public void setUnidade(String unidade) {
+		this.unidade = unidade;
+	}
 
 }

@@ -17,10 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.treinaweb.springbootapi.entity.Desbravador;
 import br.com.treinaweb.springbootapi.repository.DesbravadorRepository;
-import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@Slf4j
 public class DesbravadorController {
 
 	@Autowired
@@ -28,7 +26,7 @@ public class DesbravadorController {
 
 	@RequestMapping(value = "/desbravador", method = RequestMethod.GET, produces = "application/json")
 	public List<Desbravador> Get() {
-		log.info("Realizando consulta de todos os Desbravadores...");
+		System.out.println("Realizando consulta de todos os Desbravadores...");
 		return _desbravadorRepository.findAll();
 	}
 
@@ -36,16 +34,16 @@ public class DesbravadorController {
 	public ResponseEntity<Desbravador> GetById(@PathVariable(value = "id") long id) {
 		Optional<Desbravador> dbv = _desbravadorRepository.findById(id);
 		if (dbv.isPresent()) {
-			log.info("Consultando Desbravador especifico: " + id);
+			System.out.println("Consultando Desbravador especifico: " + id);
 			return new ResponseEntity<Desbravador>(dbv.get(), HttpStatus.OK);
 		} else
-			log.info("Desbravador não encontrado!");
+			System.out.println("Desbravador não encontrado!");
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 
 	@RequestMapping(value = "/desbravador", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
 	public Desbravador Post(@Valid @RequestBody Desbravador dbv) {
-		log.info("Salvando Desbravador na base. " + dbv.toString());
+		System.out.println("Salvando Desbravador na base. " + dbv.toString());
 		return _desbravadorRepository.save(dbv);
 	}
 
@@ -57,11 +55,11 @@ public class DesbravadorController {
 		if (oldDbv.isPresent()) {
 			Desbravador dbv = oldDbv.get();
 			dbv.setNome(novoDbv.getNome());
-			log.info("Atualizando Desbravador! " + dbv.toString());
+			System.out.println("Atualizando Desbravador! " + dbv.toString());
 			_desbravadorRepository.save(dbv);
 			return new ResponseEntity<Desbravador>(dbv, HttpStatus.OK);
 		} else
-			log.info("Desbravador não encontrado! " + oldDbv.toString());
+			System.out.println("Desbravador não encontrado! " + oldDbv.toString());
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 
@@ -70,10 +68,10 @@ public class DesbravadorController {
 		Optional<Desbravador> dbv = _desbravadorRepository.findById(id);
 		if (dbv.isPresent()) {
 			_desbravadorRepository.delete(dbv.get());
-			log.info("Desbravador deletado da base!");
+			System.out.println("Desbravador deletado da base!");
 			return new ResponseEntity<>(HttpStatus.OK);
 		} else
-			log.info("Desbravador não encontrado!");
+			System.out.println("Desbravador não encontrado!");
 		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 	}
 	
